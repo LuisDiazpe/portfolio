@@ -47,7 +47,7 @@ function SkillBar({ name, level, color }: { name: string; level: SkillLevel; col
   )
 }
 
-// simpler bar width calc
+// bar
 const LEVEL_PCT: Record<SkillLevel, string> = {
   expert: '100%', advanced: '80%', intermediate: '60%', learning: '40%',
 }
