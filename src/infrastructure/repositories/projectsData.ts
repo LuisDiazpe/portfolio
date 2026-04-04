@@ -2,7 +2,7 @@ import type { Project } from '@/domain/project/Project';
 
 export const PROJECTS_DATA: Project[] = [
 
-  // ── FULLSTACK ──────────────────────────────────────────────────
+  // FULLSTACK
   {
     id: 'arkabia-platform',
     title: 'Arkabia — Comercio Exterior SaaS',
@@ -168,7 +168,7 @@ export const PROJECTS_DATA: Project[] = [
     ],
   },
 
-  // ── FRONTEND ──────────────────────────────────────────────────
+  // FRONTEND
   {
     id: 'windows7-emulator',
     title: 'Windows 7 Online Emulator',
@@ -238,7 +238,7 @@ export const PROJECTS_DATA: Project[] = [
     ],
   },
 
-  // ── AUTOMATION ──────────────────────────────────────────────────
+  //AUTOMATION
   {
     id: 'n8n-scraping-ai',
     title: 'N8N — Scraping, IA & Llamadas',
@@ -263,7 +263,7 @@ export const PROJECTS_DATA: Project[] = [
     ],
   },
 
-  // ── IOT ──────────────────────────────────────────────────
+  //IOT
   {
     id: 'smart-parking',
     title: 'Smart Parking Barrier — Control Vehicular',
@@ -353,7 +353,7 @@ export const PROJECTS_DATA: Project[] = [
     ],
   },
 
-  // ── AI / PYTHON ──────────────────────────────────────────────────
+  // AI / PYTHON
   {
     id: 'assistant-pe',
     title: 'AssistantPe — Asistente IA Perú',
@@ -397,7 +397,7 @@ export const PROJECTS_DATA: Project[] = [
     ],
   },
 
-  // ── BACKEND ──────────────────────────────────────────────────
+  //BACKEND
   {
     id: 'electrogest',
     title: 'ElectroGest — Gestión de Electrodomésticos',
