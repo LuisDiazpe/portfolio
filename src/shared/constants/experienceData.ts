@@ -133,6 +133,25 @@ export const EXPERIENCE_DATA: Experience[] = [
     techs: ['UX/UI', 'Data Interaction', 'Human-Computer Interaction'],
   },
   {
+    id: 'scrum-certified',
+    role: 'Scrum Fundamentals Certified (SFC™)',
+    company: 'SCRUMstudy — VMEdu',
+    companyUrl: 'https://c46e136a583f7e334124-ac22991740ab4ff17e21daf2ed577041.ssl.cf1.rackcdn.com/Certificate/ScrumFundamentalsCertified-JorgeLuisDíazFiestas-1029178.pdf',
+    period: 'Abr 2024',
+    current: false,
+    type: 'certification',
+    sortYear: 2024, sortMonth: 4,
+    description:
+        'Certificación oficial Scrum Fundamentals Certified (SFC™) otorgada por SCRUMstudy/VMEdu. Acredita dominio de los fundamentos de Scrum aplicados en gestión de proyectos de software.',
+    highlights: [
+      'Scrum Fundamentals Certified — designación SFC™',
+      'Metodología Scrum: roles, eventos, artefactos y valores',
+      'Certificate ID: 1029180 · Otorgado el 30 de abril de 2024',
+      'Verificable en SCRUMstudy.com',
+    ],
+    techs: ['Scrum', 'Agile', 'Gestión de proyectos', 'Sprint Planning'],
+  },
+  {
     id: 'n8n-specialist',
     role: 'N8N Automation & AI Specialist',
     company: 'Freelance',
