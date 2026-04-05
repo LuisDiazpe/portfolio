@@ -1,48 +1,69 @@
 import { motion } from 'framer-motion'
-import { Briefcase, GraduationCap, User, Cpu } from 'lucide-react'
+import { Briefcase, GraduationCap, User, Cpu, Award, ExternalLink } from 'lucide-react'
 import { FadeIn } from '../ui/FadeIn'
 import { SectionHeader } from '../ui/SectionHeader'
 import { EXPERIENCE_DATA } from '@/shared/constants/experienceData'
 import type { Experience } from '@/shared/constants/experienceData'
 
 const TYPE_ICON: Record<Experience['type'], React.ReactNode> = {
-  job:       <Briefcase size={14} />,
-  academic:  <GraduationCap size={14} />,
-  freelance: <User size={14} />,
-  personal:  <Cpu size={14} />,
+  job:           <Briefcase size={13} />,
+  academic:      <GraduationCap size={13} />,
+  freelance:     <User size={13} />,
+  personal:      <Cpu size={13} />,
+  certification: <Award size={13} />,
 }
 
 const TYPE_COLOR: Record<Experience['type'], string> = {
-  job:       'bg-aurora-cyan/10 text-aurora-cyan border-aurora-cyan/20',
-  academic:  'bg-aurora-blue/10 text-aurora-blue border-aurora-blue/20',
-  freelance: 'bg-[#7c3aed]/10 text-[#c4b5fd] border-[#7c3aed]/30',
-  personal:  'bg-white/5 text-text-muted border-border',
+  job:           'bg-aurora-cyan/10 text-aurora-cyan border-aurora-cyan/20',
+  academic:      'bg-aurora-blue/10 text-aurora-blue border-aurora-blue/20',
+  freelance:     'bg-[#7c3aed]/10 text-[#c4b5fd] border-[#7c3aed]/30',
+  personal:      'bg-white/5 text-text-muted border-border',
+  certification: 'bg-amber-500/10 text-amber-400 border-amber-500/25',
 }
 
 const TYPE_LABEL: Record<Experience['type'], string> = {
-  job:       'Trabajo',
-  academic:  'Académico',
-  freelance: 'Freelance',
-  personal:  'Personal',
+  job:           'Trabajo',
+  academic:      'Académico',
+  freelance:     'Freelance',
+  personal:      'Personal',
+  certification: 'Certificación',
 }
 
 const DOT_COLOR: Record<Experience['type'], string> = {
-  job:       'border-aurora-cyan  bg-aurora-cyan/20',
-  academic:  'border-aurora-blue  bg-aurora-blue/20',
-  freelance: 'border-[#7c3aed]    bg-[#7c3aed]/20',
-  personal:  'border-border       bg-bg-secondary',
+  job:           'border-aurora-cyan bg-aurora-cyan/20',
+  academic:      'border-aurora-blue bg-aurora-blue/20',
+  freelance:     'border-[#7c3aed] bg-[#7c3aed]/20',
+  personal:      'border-border bg-bg-secondary',
+  certification: 'border-amber-400 bg-amber-500/15',
+}
+
+// Group entries by year for visual year separators
+function groupByYear(data: Experience[]): { year: number; items: Experience[] }[] {
+  const sorted = [...data].sort((a, b) =>
+      b.sortYear !== a.sortYear
+          ? b.sortYear - a.sortYear
+          : b.sortMonth - a.sortMonth
+  )
+  const map = new Map<number, Experience[]>()
+  for (const item of sorted) {
+    if (!map.has(item.sortYear)) map.set(item.sortYear, [])
+    map.get(item.sortYear)!.push(item)
+  }
+  return Array.from(map.entries())
+      .sort(([a], [b]) => b - a)
+      .map(([year, items]) => ({ year, items }))
 }
 
 function ExperienceCard({ exp, index }: { exp: Experience; index: number }) {
   return (
-      <FadeIn delay={index * 0.07}>
+      <FadeIn delay={index * 0.06}>
         <div className="relative">
           {/* Timeline dot */}
           <motion.div
               initial={{ scale: 0 }}
               whileInView={{ scale: 1 }}
               viewport={{ once: true }}
-              transition={{ delay: index * 0.07 + 0.2, type: 'spring', stiffness: 300 }}
+              transition={{ delay: index * 0.06 + 0.15, type: 'spring', stiffness: 300 }}
               className={`absolute -left-[2.35rem] top-4 w-4 h-4 rounded-full border-2 flex items-center justify-center flex-shrink-0 ${DOT_COLOR[exp.type]}`}
           >
             {exp.current && (
@@ -54,7 +75,7 @@ function ExperienceCard({ exp, index }: { exp: Experience; index: number }) {
             {/* Header */}
             <div className="flex flex-wrap items-start justify-between gap-3 mb-3">
               <div className="flex-1 min-w-0">
-                <div className="flex flex-wrap items-center gap-2 mb-1">
+                <div className="flex flex-wrap items-center gap-2 mb-1.5">
                 <span className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold border ${TYPE_COLOR[exp.type]}`}>
                   {TYPE_ICON[exp.type]}
                   {TYPE_LABEL[exp.type]}
@@ -70,9 +91,14 @@ function ExperienceCard({ exp, index }: { exp: Experience; index: number }) {
                   {exp.role}
                 </h3>
                 {exp.companyUrl ? (
-                    <a href={exp.companyUrl} target="_blank" rel="noreferrer"
-                       className="text-aurora-cyan text-sm hover:underline font-medium">
+                    <a
+                        href={exp.companyUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="inline-flex items-center gap-1 text-aurora-cyan text-sm hover:underline font-medium mt-0.5"
+                    >
                       {exp.company}
+                      <ExternalLink size={11} />
                     </a>
                 ) : (
                     <span className="text-text-muted text-sm font-medium">{exp.company}</span>
@@ -106,13 +132,7 @@ function ExperienceCard({ exp, index }: { exp: Experience; index: number }) {
 }
 
 export function ExperienceSection() {
-  const sorted = [...EXPERIENCE_DATA].sort((a, b) =>
-      b.sortYear !== a.sortYear
-          ? b.sortYear - a.sortYear
-          : b.sortMonth - a.sortMonth
-  )
-  const current = sorted.filter(e => e.current)
-  const past    = sorted.filter(e => !e.current)
+  const groups = groupByYear(EXPERIENCE_DATA)
 
   return (
       <section id="experience" className="relative py-24 px-6">
@@ -120,49 +140,40 @@ export function ExperienceSection() {
           <SectionHeader
               tag="// trayectoria"
               title={<>Mi <span className="gradient-text">experiencia</span></>}
-              subtitle="Trabajo real en producción, proyectos freelance con clientes y formación académica de alto nivel."
+              subtitle="Trabajo real en producción, freelance con clientes, formación académica y certificaciones internacionales."
           />
 
-          {/* Current positions */}
-          <FadeIn className="mb-3">
-            <div className="flex items-center gap-3 mb-6">
-              <span className="section-tag">Posiciones actuales</span>
-              <div className="flex-1 h-px bg-border/40" />
-              <span className="text-xs font-mono text-aurora-cyan bg-aurora-cyan/8 border border-aurora-cyan/20 px-2 py-1 rounded-full">
-              {current.length} activas
-            </span>
-            </div>
-          </FadeIn>
+          <div className="relative">
+            {/* Full timeline line */}
+            <div className="absolute left-5 top-0 bottom-0 w-px bg-gradient-to-b from-aurora-cyan via-aurora-violet to-transparent opacity-25" />
 
-          <div className="relative mb-14">
-            <div className="absolute left-5 top-0 bottom-0 w-px bg-gradient-to-b from-aurora-cyan to-aurora-cyan/10 opacity-30" />
-            <div className="flex flex-col gap-5 pl-14">
-              {current.map((exp, i) => (
-                  <ExperienceCard key={exp.id} exp={exp} index={i} />
+            <div className="flex flex-col gap-0 pl-14">
+              {groups.map((group, gi) => (
+                  <div key={group.year} className="mb-10">
+
+                    {/* Year label */}
+                    <FadeIn delay={gi * 0.05}>
+                      <div className="relative flex items-center gap-3 mb-6 -ml-14">
+                        {/* Year dot on timeline */}
+                        <div className="w-10 h-10 rounded-full bg-bg-tertiary border border-aurora-cyan/30 flex items-center justify-center flex-shrink-0 z-10">
+                      <span className="font-mono text-xs font-bold text-aurora-cyan">
+                        {group.year}
+                      </span>
+                        </div>
+                        <div className="flex-1 h-px bg-gradient-to-r from-aurora-cyan/20 to-transparent" />
+                      </div>
+                    </FadeIn>
+
+                    {/* Items for this year */}
+                    <div className="flex flex-col gap-4">
+                      {group.items.map((exp, i) => (
+                          <ExperienceCard key={exp.id} exp={exp} index={gi * 10 + i} />
+                      ))}
+                    </div>
+                  </div>
               ))}
             </div>
           </div>
-
-          {/* Past positions */}
-          {past.length > 0 && (
-              <>
-                <FadeIn className="mb-3">
-                  <div className="flex items-center gap-3 mb-6">
-                    <span className="section-tag">Experiencia previa</span>
-                    <div className="flex-1 h-px bg-border/40" />
-                  </div>
-                </FadeIn>
-
-                <div className="relative">
-                  <div className="absolute left-5 top-0 bottom-0 w-px bg-gradient-to-b from-aurora-violet to-transparent opacity-30" />
-                  <div className="flex flex-col gap-5 pl-14">
-                    {past.map((exp, i) => (
-                        <ExperienceCard key={exp.id} exp={exp} index={i} />
-                    ))}
-                  </div>
-                </div>
-              </>
-          )}
         </div>
       </section>
   )
