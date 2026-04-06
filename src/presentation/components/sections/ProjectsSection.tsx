@@ -42,7 +42,7 @@ export function ProjectsSection() {
                       className={`relative flex items-center gap-1.5 px-4 py-2 rounded-xl text-sm font-medium
                   transition-all duration-200 focus-aurora ${
                           filter === f.id
-                              ? 'text-bg-primary'
+                              ? 'text-[#050a14]'
                               : 'text-text-muted hover:text-text-primary border border-border hover:border-aurora-cyan/30 bg-bg-card/40'
                       }`}
                   >
@@ -59,12 +59,10 @@ export function ProjectsSection() {
                     )}
                     {f.icon && (
                         <span className={`relative z-10 ${
-                            filter === f.id
-                                ? f.id === 'featured' ? 'text-bg-primary' : 'text-bg-primary'
-                                : 'text-amber-400'
+                            filter === f.id ? 'text-[#050a14]' : 'text-amber-400'
                         }`}>
-                    {f.icon}
-                  </span>
+                        {f.icon}
+                    </span>
                     )}
                     <span className="relative z-10">{f.label}</span>
                   </motion.button>

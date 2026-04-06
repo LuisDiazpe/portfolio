@@ -79,7 +79,7 @@ export function Navbar() {
               href="#contact"
               onClick={e => { e.preventDefault(); scrollTo('contact') }}
               className="hidden md:inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold
-                bg-aurora-cyan text-bg-primary hover:opacity-85 transition-opacity focus-aurora"
+                bg-aurora-cyan text-[#050a14] hover:opacity-85 transition-opacity focus-aurora"
             >
               Contáctame
             </a>

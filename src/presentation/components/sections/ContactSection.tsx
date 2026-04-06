@@ -292,7 +292,7 @@ export function ContactSection() {
                             type="submit"
                             disabled={status === 'loading'}
                             className="flex items-center justify-center gap-2 w-full py-3.5 rounded-xl
-                        font-semibold text-sm bg-aurora-cyan text-bg-primary hover:opacity-85
+                        font-semibold text-sm bg-aurora-cyan text-[#050a14] hover:opacity-85
                         disabled:opacity-50 transition-all duration-200 focus-aurora"
                         >
                           {status === 'loading' ? (

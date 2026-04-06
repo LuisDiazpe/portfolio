@@ -61,7 +61,7 @@ export function ProjectCard({ project, index }: ProjectCardProps) {
         <div className="absolute inset-0 bg-bg-primary/60 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center gap-4">
           {project.liveUrl && (
             <a href={project.liveUrl} target="_blank" rel="noreferrer"
-              className="flex items-center gap-1.5 px-4 py-2 rounded-lg bg-aurora-cyan text-bg-primary text-sm font-semibold hover:opacity-85 transition-opacity">
+              className="flex items-center gap-1.5 px-4 py-2 rounded-lg bg-aurora-cyan text-[#050a14] text-sm font-semibold hover:opacity-85 transition-opacity">
               <ExternalLink size={14} /> Ver proyecto
             </a>
           )}
