@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion'
+import { useTranslation } from 'react-i18next'
 import { Briefcase, GraduationCap, User, Cpu, Award, ExternalLink } from 'lucide-react'
 import { FadeIn } from '../ui/FadeIn'
 import { SectionHeader } from '../ui/SectionHeader'
@@ -21,12 +22,8 @@ const TYPE_COLOR: Record<Experience['type'], string> = {
   certification: 'bg-amber-500/10 text-amber-400 border-amber-500/25',
 }
 
-const TYPE_LABEL: Record<Experience['type'], string> = {
-  job:           'Trabajo',
-  academic:      'Académico',
-  freelance:     'Freelance',
-  personal:      'Personal',
-  certification: 'Certificación',
+function getTypeLabel(type: Experience['type'], t: (key: string) => string): string {
+  return t(`experience.types.${type}`)
 }
 
 const DOT_COLOR: Record<Experience['type'], string> = {
@@ -55,6 +52,12 @@ function groupByYear(data: Experience[]): { year: number; items: Experience[] }[
 }
 
 function ExperienceCard({ exp, index }: { exp: Experience; index: number }) {
+  const { t, i18n } = useTranslation()
+  const lang = i18n.language
+  const td = lang !== 'es' ? (t(`${lang === 'en' ? 'experience_data' : 'experience_data'}.${exp.id}`, { returnObjects: true }) as Record<string,unknown> | string) : null
+  const tRole = (td && typeof td === 'object' && 'role' in td) ? td.role as string : exp.role
+  const tDesc = (td && typeof td === 'object' && 'description' in td) ? td.description as string : exp.description
+  const tHighlights = (td && typeof td === 'object' && 'highlights' in td) ? td.highlights as string[] : exp.highlights
   return (
       <FadeIn delay={index * 0.06}>
         <div className="relative">
@@ -78,7 +81,7 @@ function ExperienceCard({ exp, index }: { exp: Experience; index: number }) {
                 <div className="flex flex-wrap items-center gap-2 mb-1.5">
                 <span className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold border ${TYPE_COLOR[exp.type]}`}>
                   {TYPE_ICON[exp.type]}
-                  {TYPE_LABEL[exp.type]}
+                  {getTypeLabel(exp.type, t)}
                 </span>
                   {exp.current && (
                       <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold bg-aurora-cyan/8 text-aurora-cyan border border-aurora-cyan/20">
@@ -88,7 +91,7 @@ function ExperienceCard({ exp, index }: { exp: Experience; index: number }) {
                   )}
                 </div>
                 <h3 className="font-display font-bold text-base md:text-lg text-text-primary leading-snug">
-                  {exp.role}
+                  {tRole}
                 </h3>
                 {exp.companyUrl ? (
                     <a
@@ -109,10 +112,10 @@ function ExperienceCard({ exp, index }: { exp: Experience; index: number }) {
             </span>
             </div>
 
-            <p className="text-text-muted text-sm leading-relaxed mb-4">{exp.description}</p>
+            <p className="text-text-muted text-sm leading-relaxed mb-4">{tDesc}</p>
 
             <ul className="flex flex-col gap-1.5 mb-4">
-              {exp.highlights.map(h => (
+              {tHighlights.map(h => (
                   <li key={h} className="flex items-start gap-2 text-sm text-text-muted">
                     <span className="mt-2 w-1 h-1 rounded-full bg-aurora-cyan flex-shrink-0" />
                     {h}
@@ -132,15 +135,16 @@ function ExperienceCard({ exp, index }: { exp: Experience; index: number }) {
 }
 
 export function ExperienceSection() {
+  const { t } = useTranslation()
   const groups = groupByYear(EXPERIENCE_DATA)
 
   return (
       <section id="experience" className="relative py-24 px-6">
         <div className="max-w-6xl mx-auto">
           <SectionHeader
-              tag="// trayectoria"
-              title={<>Mi <span className="gradient-text">experiencia</span></>}
-              subtitle="Trabajo real en producción, freelance con clientes, formación académica y certificaciones internacionales."
+              tag={t("experience.tag")}
+              title={<>{t("experience.title")} <span className="gradient-text">{t("experience.title_hl")}</span></>}
+              subtitle={t("experience.subtitle")}
           />
 
           <div className="relative">
