@@ -147,7 +147,7 @@ export function AuroraBackground() {
 
 function drawMountains(ctx: CanvasRenderingContext2D, W: number, H: number, mouseX: number, mouseY: number) {
     const layers = [
-        // Colores de roca aclarados sutilmente para que no se fundan con el negro absoluto
+        // Colores de roca
         { y: 0.45, rockColor: '#0f203b', snowColor: '#6e98c4', freq: 0.004, amp: 140, detailFreq: 0.02, detailAmp: 12, p: 15 },
         { y: 0.55, rockColor: '#0a162b', snowColor: '#4a72a0', freq: 0.003, amp: 170, detailFreq: 0.025, detailAmp: 18, p: 30 },
         { y: 0.68, rockColor: '#050b14', snowColor: '#244061', freq: 0.005, amp: 100, detailFreq: 0.03, detailAmp: 10, p: 50 },

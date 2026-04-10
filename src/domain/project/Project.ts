@@ -1,4 +1,4 @@
-// Domain Entity — no framework dependencies
+// Domain Entity
 export type ProjectCategory =
   | 'fullstack'
   | 'frontend'

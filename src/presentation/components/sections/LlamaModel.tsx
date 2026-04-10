@@ -124,7 +124,7 @@ function AlpacaInner({ mouse }: { mouse: React.MutableRefObject<Mouse> }) {
         if (!loop) {
             action.clampWhenFinished = true
             if (onDone) {
-                // Cálculo seguro del tiempo para evitar bloqueos
+
                 const durationMs = (action.getClip().duration / speed) * 1000
                 setTimeout(onDone, durationMs - 50)
             }
@@ -170,7 +170,7 @@ function AlpacaInner({ mouse }: { mouse: React.MutableRefObject<Mouse> }) {
             if (!mouse.current.isDead && clickCount.current > 0) {
                 mouse.current.isAnimating = true
                 play(atk, false, 1.2, () => {
-                    // Solo liberamos el estado. Dejamos que el useFrame decida si debe caminar o quedarse quieta
+
                     mouse.current.isAnimating = false
                 })
             }
@@ -192,12 +192,12 @@ function AlpacaInner({ mouse }: { mouse: React.MutableRefObject<Mouse> }) {
         if (mouse.current.isActive) {
             const distToMouse = Math.sqrt(mx * mx + (my + 0.3) ** 2)
 
-            // RADAR AUMENTADO: Si entras a 0.85 empieza a mirar. Si pasas el 0.4 te presta total atención y se detiene.
+            // RADAR
             if (distToMouse < 0.4) attention = 1
             else if (distToMouse < 0.85) attention = 1 - ((distToMouse - 0.4) / 0.45)
         }
 
-        // isFocused decide si ella "deja de caminar para verte".
+        // isFocused
         const isFocusedOnYou = attention > 0.5
 
         if (matRef.current) {

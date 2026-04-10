@@ -5,7 +5,7 @@ export class ContactController {
   constructor(private readonly useCase: SendContactUseCase) {}
 
   handle = async (req: Request, res: Response): Promise<void> => {
-    // Honeypot anti-bot check: if 'website' field is filled, silently succeed (bot trap)
+    // Honeypot anti-bot check
     if (req.body.website) {
       res.status(200).json({ success: true, messageId: 'honeypot' })
       return

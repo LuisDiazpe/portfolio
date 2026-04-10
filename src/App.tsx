@@ -4,7 +4,7 @@ import { ApiContactRepository } from '@/infrastructure/repositories/ApiContactRe
 import { GetProjectsByCategoryUseCase, GetFeaturedProjectsUseCase } from '@/application/project/GetProjectsUseCase'
 import { SendContactMessageUseCase } from '@/application/contact/SendContactMessageUseCase'
 
-// Dependency injection wiring — all infrastructure wired here, not inside components
+// Dependency injection wiring
 const projectRepo  = new InMemoryProjectRepository()
 const contactRepo  = new ApiContactRepository()
 

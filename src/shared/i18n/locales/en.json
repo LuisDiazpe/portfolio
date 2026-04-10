@@ -30,7 +30,7 @@
     "tag": "// about me",
     "title": "Software engineer",
     "subtitle": "passionate about innovation",
-    "p1": "I'm Jorge, 19 years old, from <strong>Cajamarca, Peru</strong>. I study Software Engineering at UPC and work as a <strong>Junior Fullstack Developer</strong> at <link>Arkabia</link>, where I also lead the <strong>Meproind</strong> project technically.",
+    "p1": "I'm Jorge, 19 years old, from <strong>Cajamarca, Peru</strong>. I study Software Engineering at UPC and work as a <strong>Fullstack Developer</strong> at <link>Arkabia</link>, where I also lead the <strong>Meproind</strong> project technically.",
     "p2": "I work with React, Angular, Java, TypeScript, C# and Python. I design and model relational and non-relational databases, define architectures and coordinate teams under <strong>Scrum</strong>. I also automate processes with <strong>N8N</strong> and AI for real production clients.",
     "p3": "Self-taught by nature. I learn by building real things and always look for the cleanest, most scalable and maintainable solution.",
     "motto_label": "// motto",
@@ -38,7 +38,7 @@
     "motto_by": "— Alan Kay",
     "download_cv": "Download CV",
     "highlights": {
-      "arkabia_title": "Junior Fullstack Developer at Arkabia",
+      "arkabia_title": "Fullstack Developer at Arkabia",
       "arkabia_desc": "React, Angular, TypeScript, C#, Java. Technical lead for Meproind. Sep 2024 — Present.",
       "upc_title": "Software Engineering — UPC",
       "upc_desc": "7th semester. DDD, clean architecture and real fullstack team projects.",
@@ -60,6 +60,14 @@
       "advanced": "Advanced",
       "intermediate": "Intermediate",
       "learning": "Learning"
+    },
+    "groups": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "mobile": "Mobile",
+      "database": "Databases",
+      "automation": "Automation",
+      "tools": "Tools & DevOps"
     }
   },
   "experience": {
@@ -162,7 +170,7 @@
       ]
     },
     "arkabia-dev": {
-      "role": "Junior Fullstack Developer",
+      "role": "Fullstack Developer",
       "description": "Fullstack development on Peru's most important foreign trade SaaS platform. Agile team with Scrum, building critical modules with React + TypeScript and domain-oriented architecture.",
       "highlights": [
         "Frontend development using React, Figma, CSS and Tailwind",
