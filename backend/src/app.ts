@@ -10,7 +10,7 @@ import { NodemailerEmailService } from './infrastructure/email/NodemailerEmailSe
 export function createApp() {
   const app = express()
 
-  // ── Security middleware ──────────────────────────────────────
+  //Security middleware
   app.use(helmet())
 
   // CORS — only allow your frontend domain
@@ -33,7 +33,7 @@ export function createApp() {
 
   app.use(express.json({ limit: '10kb' })) // Limit body size
 
-  // ── Rate limiting ────────────────────────────────────────────
+  //Rate limiting
   const contactLimiter = rateLimit({
     windowMs: 15 * 60 * 1000, // 15 minutes
     max: 5,                    // max 5 requests per window per IP
@@ -42,12 +42,12 @@ export function createApp() {
     message: { success: false, error: 'Demasiados intentos. Espera 15 minutos.' },
   })
 
-  // ── Dependency injection ─────────────────────────────────────
+  //Dependency injection
   const emailService = new NodemailerEmailService()
   const useCase      = new SendContactUseCase(emailService)
   const controller   = new ContactController(useCase)
 
-  // ── Routes ───────────────────────────────────────────────────
+  //Routes
   app.use('/api/contact', contactLimiter, createContactRouter(controller))
 
   // Health check

@@ -1,7 +1,7 @@
 import { z } from 'zod'
 import type { ContactMessage, EmailService } from '../domain/contact/ContactMessage'
 
-// Zod schema — application layer validation (more thorough than domain)
+// Zod schema — application layer validation
 export const ContactSchema = z.object({
   name: z
     .string()
@@ -35,7 +35,7 @@ export class SendContactUseCase {
   constructor(private readonly emailService: EmailService) {}
 
   async execute(rawInput: unknown): Promise<SendContactResult> {
-    // 1. Validate input
+    //Validate input
     const parsed = ContactSchema.safeParse(rawInput)
     if (!parsed.success) {
       const fieldErrors: Record<string, string> = {}
@@ -48,8 +48,8 @@ export class SendContactUseCase {
 
     const input: ContactMessage = parsed.data
 
-    // 2. Honeypot field check (set in HTTP layer)
-    // 3. Send
+    //Honeypot field check
+    //Send
     try {
       const result = await this.emailService.send(input)
       return { success: true, messageId: result.messageId }

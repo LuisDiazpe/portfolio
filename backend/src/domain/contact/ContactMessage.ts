@@ -1,4 +1,4 @@
-// Domain Entity — pure, no framework dependencies
+// Domain Entity
 export interface ContactMessage {
   readonly name: string
   readonly email: string

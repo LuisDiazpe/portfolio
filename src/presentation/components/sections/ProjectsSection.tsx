@@ -82,7 +82,7 @@ export function ProjectsSection() {
                 animate={{ opacity: 1 }}
                 className="text-sm text-text-subtle mt-3 font-mono"
             >
-              {loading ? '...' : `${projects.length} ${t(projects.length !== 1 ? 'projects.count_other' : 'projects.count_one', { count: projects.length })}`}
+              {loading ? '...' : t(projects.length !== 1 ? 'projects.count_other' : 'projects.count_one', { count: projects.length })}
             </motion.p>
           </div>
 

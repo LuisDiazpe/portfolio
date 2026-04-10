@@ -55,7 +55,7 @@ export function SkillsSection() {
                     {SKILLS_DATA.map((group, gi) => (
                         <FadeIn key={group.category} delay={gi * 0.05}>
                             <div className="card-glow rounded-2xl p-6">
-                                <h3 className="section-tag mb-4">{group.label}</h3>
+                                <h3 className="section-tag mb-4">{t(`skills.groups.${group.category}`)}</h3>
                                 <div className="flex flex-col divide-y divide-white/5">
                                     {group.skills.map(skill => (
                                         <SkillBar

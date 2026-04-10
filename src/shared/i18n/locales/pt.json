@@ -30,15 +30,15 @@
     "tag": "// sobre mim",
     "title": "Engenheiro de software",
     "subtitle": "apaixonado por inovar",
-    "p1": "Sou Jorge, 19 anos, de <strong>Cajamarca, Peru</strong>. Estudo Engenharia de Software na UPC e trabalho como <strong>Junior Fullstack Developer</strong> na <link>Arkabia</link>, onde também lidero tecnicamente o projeto <strong>Meproind</strong>.",
+    "p1": "Sou Jorge, 19 anos, de <strong>Cajamarca, Peru</strong>. Estudo Engenharia de Software na UPC e trabalho como <strong>Fullstack Developer</strong> na <link>Arkabia</link>, onde também lidero tecnicamente o projeto <strong>Meproind</strong>.",
     "p2": "Trabalho com React, Angular, Java, TypeScript, C# e Python. Projeto e modelo bancos de dados relacionais e não relacionais, defino arquiteturas e coordeno equipes com <strong>Scrum</strong>. Também automatizo processos com <strong>N8N</strong> e IA para clientes reais em produção.",
     "p3": "Autodidata por natureza. Aprendo construindo coisas reais e sempre busco a solução mais limpa, escalável e sustentável.",
     "motto_label": "// lema",
-    "motto": "\"The best way to predict the future is to invent it.\"",
+    "motto": "\"A melhor maneira de prever o futuro é inventá-lo.\"",
     "motto_by": "— Alan Kay",
     "download_cv": "Baixar CV",
     "highlights": {
-      "arkabia_title": "Junior Fullstack Developer na Arkabia",
+      "arkabia_title": "Fullstack Developer na Arkabia",
       "arkabia_desc": "React, Angular, TypeScript, C#, Java. Líder técnico do Meproind. Set 2024 — Presente.",
       "upc_title": "Engenharia de Software — UPC",
       "upc_desc": "7º semestre. DDD, arquiteturas limpas e projetos fullstack reais em equipe.",
@@ -60,6 +60,14 @@
       "advanced": "Avançado",
       "intermediate": "Intermediário",
       "learning": "Aprendendo"
+    },
+    "groups": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "mobile": "Mobile",
+      "database": "Bancos de dados",
+      "automation": "Automação",
+      "tools": "Ferramentas & DevOps"
     }
   },
   "experience": {
