@@ -6,7 +6,7 @@ export interface ContactMessage {
   readonly message: string;
 }
 
-// Domain validation — pure logic, no framework
+// Domain validation
 export type ContactValidationError = {
   field: keyof ContactMessage;
   message: string;

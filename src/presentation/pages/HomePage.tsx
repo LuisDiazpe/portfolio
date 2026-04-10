@@ -9,19 +9,21 @@ import { ProjectsSection } from '../components/sections/ProjectsSection'
 import { ContactSection } from '../components/sections/ContactSection'
 
 export function HomePage() {
-  return (
-    <div className="relative min-h-screen">
-      <AuroraBackground />
-      <Navbar />
-      <main className="relative z-10">
-        <HeroSection />
-        <AboutSection />
-        <SkillsSection />
-        <ExperienceSection />
-        <ProjectsSection />
-        <ContactSection />
-      </main>
-      <Footer />
-    </div>
-  )
+    return (
+        <div style={{ position: 'relative', minHeight: '100vh' }}>
+            <AuroraBackground />
+            <div style={{ position: 'relative', zIndex: 1 }}>
+                <Navbar />
+                <main>
+                    <HeroSection />
+                    <AboutSection />
+                    <SkillsSection />
+                    <ExperienceSection />
+                    <ProjectsSection />
+                    <ContactSection />
+                </main>
+                <Footer />
+            </div>
+        </div>
+    )
 }

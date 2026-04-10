@@ -2,7 +2,7 @@ import nodemailer from 'nodemailer'
 import type { ContactMessage, EmailService } from '../../domain/contact/ContactMessage'
 
 export class NodemailerEmailService implements EmailService {
-  // Lazy: created on first send() call, after dotenv has fully loaded
+
   private transporter: nodemailer.Transporter | null = null
 
   private getTransporter(): nodemailer.Transporter {
@@ -25,7 +25,7 @@ export class NodemailerEmailService implements EmailService {
     this.transporter = nodemailer.createTransport({
       host: 'smtp.gmail.com',
       port: 465,
-      secure: true, // SSL — more reliable than service:'gmail' on Windows
+      secure: true,
       auth: { user, pass },
     })
 
@@ -37,7 +37,7 @@ export class NodemailerEmailService implements EmailService {
     const toEmail     = (process.env.CONTACT_RECEIVER ?? process.env.GMAIL_USER ?? '').trim()
     const fromEmail   = (process.env.GMAIL_USER ?? '').trim()
 
-    // Email to Jorge (notification)
+    // Email to me
     const notificationResult = await transporter.sendMail({
       from:    `"Portfolio Contact" <${fromEmail}>`,
       to:      toEmail,

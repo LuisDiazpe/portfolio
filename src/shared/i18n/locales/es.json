@@ -1,0 +1,160 @@
+{
+  "nav": {
+    "about": "Sobre mí",
+    "skills": "Stack",
+    "experience": "Experiencia",
+    "projects": "Proyectos",
+    "contact": "Contacto",
+    "cta": "Contáctame"
+  },
+  "hero": {
+    "available": "Disponible para oportunidades",
+    "roles": [
+      "Fullstack Developer",
+      "N8N Automation",
+      "UPC · Lima, Perú"
+    ],
+    "description": "Construyo productos digitales completos — desde interfaces que enamoran hasta backends que escalan. Apasionado por la arquitectura limpia, la automatización y hacer que las cosas funcionen de verdad.",
+    "cta_projects": "Ver proyectos",
+    "cta_contact": "Hablemos",
+    "scroll": "scroll",
+    "stats": {
+      "semester": "Semestre UPC",
+      "years": "Años programando",
+      "projects": "Proyectos",
+      "languages": "Idiomas"
+    },
+    "download_cv": "Descargar CV"
+  },
+  "about": {
+    "tag": "// sobre mí",
+    "title": "Ingeniero de software",
+    "subtitle": "apasionado por innovar",
+    "p1": "Soy Jorge, 19 años, de <strong>Cajamarca, Perú</strong>. Estudio Ingeniería de Software en la UPC y trabajo como <strong>Fullstack Developer</strong> en <link>Arkabia</link>, donde además lidero técnicamente el proyecto <strong>Meproind</strong>.",
+    "p2": "Trabajo con React, Angular, Java, TypeScript, C# y Python. Diseño y modelo bases de datos relacionales y no relacionales, defino arquitecturas y coordino equipos bajo <strong>Scrum</strong>. Además automatizo procesos con <strong>N8N</strong> e IA para clientes reales en producción.",
+    "p3": "Autodidacta por naturaleza. Aprendo construyendo cosas reales y busco siempre la solución más limpia, escalable y mantenible.",
+    "motto_label": "// lema",
+    "motto": "\"La mejor manera de predecir el futuro es inventándolo..\"",
+    "motto_by": "— Alan Kay",
+    "download_cv": "Descargar CV",
+    "highlights": {
+      "arkabia_title": "Fullstack Developer en Arkabia",
+      "arkabia_desc": "React, Angular, TypeScript, C#, Java. Líder técnico de Meproind. Sep 2024 — Actualidad.",
+      "upc_title": "Ingeniería de Software — UPC",
+      "upc_desc": "7° semestre. DDD, arquitecturas limpias y proyectos fullstack reales en equipo.",
+      "n8n_title": "Automatización con N8N & IA",
+      "n8n_desc": "Flujos, bots, scraping, llamadas automáticas e integraciones multi-plataforma.",
+      "lang_title": "Trilingüe",
+      "lang_desc": "Español nativo · English B2 (Cambridge) · Português intermediário",
+      "loc_title": "Cajamarca, Perú 🏔️",
+      "loc_desc": "19 años. Aspiring Software Engineer at Microsoft."
+    }
+  },
+  "skills": {
+    "tag": "// stack técnico",
+    "title": "Tecnologías que",
+    "title_hl": "manejo",
+    "subtitle": "De frontend moderno a backends robustos, mobile y automatización. Siempre con buenas prácticas.",
+    "levels": {
+      "expert": "Experto",
+      "advanced": "Avanzado",
+      "intermediate": "Intermedio",
+      "learning": "Aprendiendo"
+    },
+    "groups": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "mobile": "Mobile",
+      "database": "Bases de datos",
+      "automation": "Automatización",
+      "tools": "Herramientas & DevOps"
+    }
+  },
+  "experience": {
+    "tag": "// trayectoria",
+    "title": "Mi",
+    "title_hl": "experiencia",
+    "subtitle": "Trabajo real en producción, proyectos freelance con clientes y formación académica de alto nivel.",
+    "current": "Actual",
+    "types": {
+      "job": "Trabajo",
+      "academic": "Académico",
+      "freelance": "Freelance",
+      "personal": "Personal",
+      "certification": "Certificación"
+    },
+    "sections": {
+      "current": "Posiciones actuales",
+      "past": "Experiencia previa"
+    }
+  },
+  "projects": {
+    "tag": "// proyectos",
+    "title": "Lo que he",
+    "title_hl": "construido",
+    "subtitle": "Proyectos reales en producción, académicos de alto nivel y experimentos personales — en múltiples stacks.",
+    "filters": {
+      "featured": "Destacados",
+      "fullstack": "Fullstack",
+      "frontend": "Frontend",
+      "mobile": "Mobile",
+      "automation": "Automatización",
+      "iot": "IoT",
+      "ai": "AI / Python",
+      "backend": "Backend",
+      "all": "Todos"
+    },
+    "status": {
+      "production": "Producción",
+      "academic": "Académico",
+      "personal": "Personal",
+      "open-source": "Open Source"
+    },
+    "featured": "Destacado",
+    "live": "Ver proyecto",
+    "code": "Código",
+    "empty": "// sin proyectos en esta categoría",
+    "count_one": "{{count}} proyecto",
+    "count_other": "{{count}} proyectos"
+  },
+  "contact": {
+    "tag": "// contacto",
+    "title": "¿Tienes un",
+    "title_hl": "proyecto",
+    "title_end": "?",
+    "subtitle": "Estoy abierto a oportunidades freelance, colaboraciones o simplemente charlar sobre tech.",
+    "direct": "Escríbeme directo",
+    "description": "Prefiero el contacto directo por WhatsApp o el formulario. Respondo en menos de 24h.",
+    "availability": "Disponible ahora",
+    "status_comment": "// estado actual",
+    "status_text": "Abierto a proyectos freelance,\ncolaboraciones y oportunidades\nfull-time o part-time.",
+    "tags": [
+      "Freelance",
+      "Full-time",
+      "Part-time",
+      "Remoto"
+    ],
+    "form": {
+      "title": "Envíame un mensaje",
+      "name": "Nombre",
+      "name_ph": "Tu nombre",
+      "email": "Email",
+      "email_ph": "tu@email.com",
+      "subject": "Asunto",
+      "subject_ph": "¿De qué se trata?",
+      "message": "Mensaje",
+      "message_ph": "Cuéntame sobre tu proyecto o idea...",
+      "send": "Enviar mensaje",
+      "sending": "Enviando...",
+      "required": "Requerido",
+      "min2": "Mínimo 2 caracteres",
+      "min10": "Mínimo 10 caracteres",
+      "invalid_email": "Email inválido"
+    },
+    "success_title": "¡Mensaje enviado!",
+    "success_desc": "Te respondo pronto, gracias por escribirme."
+  },
+  "footer": {
+    "built": "Diseñado & construido por Jorge Luis Díaz Fiestas · Cajamarca, Perú 🏔️"
+  }
+}

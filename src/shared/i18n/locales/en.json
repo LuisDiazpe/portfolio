@@ -1,0 +1,394 @@
+{
+  "nav": {
+    "about": "About",
+    "skills": "Stack",
+    "experience": "Experience",
+    "projects": "Projects",
+    "contact": "Contact",
+    "cta": "Contact me"
+  },
+  "hero": {
+    "available": "Available for opportunities",
+    "roles": [
+      "Fullstack Developer",
+      "N8N Automation",
+      "UPC · Lima, Peru"
+    ],
+    "description": "I build complete digital products — from interfaces that delight to backends that scale. Passionate about clean architecture, automation and making things actually work.",
+    "cta_projects": "View projects",
+    "cta_contact": "Let's talk",
+    "scroll": "scroll",
+    "stats": {
+      "semester": "UPC Semester",
+      "years": "Years coding",
+      "projects": "Projects",
+      "languages": "Languages"
+    },
+    "download_cv": "Download CV"
+  },
+  "about": {
+    "tag": "// about me",
+    "title": "Software engineer",
+    "subtitle": "passionate about innovation",
+    "p1": "I'm Jorge, 19 years old, from <strong>Cajamarca, Peru</strong>. I study Software Engineering at UPC and work as a <strong>Fullstack Developer</strong> at <link>Arkabia</link>, where I also lead the <strong>Meproind</strong> project technically.",
+    "p2": "I work with React, Angular, Java, TypeScript, C# and Python. I design and model relational and non-relational databases, define architectures and coordinate teams under <strong>Scrum</strong>. I also automate processes with <strong>N8N</strong> and AI for real production clients.",
+    "p3": "Self-taught by nature. I learn by building real things and always look for the cleanest, most scalable and maintainable solution.",
+    "motto_label": "// motto",
+    "motto": "\"The best way to predict the future is to invent it.\"",
+    "motto_by": "— Alan Kay",
+    "download_cv": "Download CV",
+    "highlights": {
+      "arkabia_title": "Fullstack Developer at Arkabia",
+      "arkabia_desc": "React, Angular, TypeScript, C#, Java. Technical lead for Meproind. Sep 2024 — Present.",
+      "upc_title": "Software Engineering — UPC",
+      "upc_desc": "7th semester. DDD, clean architecture and real fullstack team projects.",
+      "n8n_title": "Automation with N8N & AI",
+      "n8n_desc": "Workflows, bots, scraping, automated calls and multi-platform integrations.",
+      "lang_title": "Trilingual",
+      "lang_desc": "Native Spanish · English B2 (Cambridge) · Intermediate Portuguese",
+      "loc_title": "Cajamarca, Peru 🏔️",
+      "loc_desc": "19 years old. Aspiring Software Engineer at Microsoft."
+    }
+  },
+  "skills": {
+    "tag": "// tech stack",
+    "title": "Technologies I",
+    "title_hl": "work with",
+    "subtitle": "From modern frontend to robust backends, mobile and automation. Always with best practices.",
+    "levels": {
+      "expert": "Expert",
+      "advanced": "Advanced",
+      "intermediate": "Intermediate",
+      "learning": "Learning"
+    },
+    "groups": {
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "mobile": "Mobile",
+      "database": "Databases",
+      "automation": "Automation",
+      "tools": "Tools & DevOps"
+    }
+  },
+  "experience": {
+    "tag": "// experience",
+    "title": "My",
+    "title_hl": "experience",
+    "subtitle": "Real production work, freelance client projects and high-level academic formation.",
+    "current": "Current",
+    "types": {
+      "job": "Work",
+      "academic": "Academic",
+      "freelance": "Freelance",
+      "personal": "Personal",
+      "certification": "Certification"
+    },
+    "sections": {
+      "current": "Current positions",
+      "past": "Previous experience"
+    }
+  },
+  "projects": {
+    "tag": "// projects",
+    "title": "What I've",
+    "title_hl": "built",
+    "subtitle": "Real production projects, high-level academic work and personal experiments — across multiple stacks.",
+    "filters": {
+      "featured": "Featured",
+      "fullstack": "Fullstack",
+      "frontend": "Frontend",
+      "mobile": "Mobile",
+      "automation": "Automation",
+      "iot": "IoT",
+      "ai": "AI / Python",
+      "backend": "Backend",
+      "all": "All"
+    },
+    "status": {
+      "production": "Production",
+      "academic": "Academic",
+      "personal": "Personal",
+      "open-source": "Open Source"
+    },
+    "featured": "Featured",
+    "live": "View project",
+    "code": "Code",
+    "empty": "// no projects in this category",
+    "count_one": "{{count}} project",
+    "count_other": "{{count}} projects"
+  },
+  "contact": {
+    "tag": "// contact",
+    "title": "Got a",
+    "title_hl": "project",
+    "title_end": "?",
+    "subtitle": "I'm open to freelance opportunities, collaborations or just chatting about tech.",
+    "direct": "Reach me directly",
+    "description": "I prefer direct contact via WhatsApp or the form. I usually reply within 24h.",
+    "availability": "Available now",
+    "status_comment": "// current status",
+    "status_text": "Open to freelance projects,\ncollaborations and opportunities\nfull-time or part-time.",
+    "tags": [
+      "Freelance",
+      "Full-time",
+      "Part-time",
+      "Remote"
+    ],
+    "form": {
+      "title": "Send me a message",
+      "name": "Name",
+      "name_ph": "Your name",
+      "email": "Email",
+      "email_ph": "you@email.com",
+      "subject": "Subject",
+      "subject_ph": "What's it about?",
+      "message": "Message",
+      "message_ph": "Tell me about your project or idea...",
+      "send": "Send message",
+      "sending": "Sending...",
+      "required": "Required",
+      "min2": "At least 2 characters",
+      "min10": "At least 10 characters",
+      "invalid_email": "Invalid email"
+    },
+    "success_title": "Message sent!",
+    "success_desc": "I'll get back to you soon, thanks for reaching out."
+  },
+  "footer": {
+    "built": "Designed & built by Jorge Luis Díaz Fiestas · Cajamarca, Peru 🏔️"
+  },
+  "experience_data": {
+    "meproind-dev": {
+      "role": "Fullstack Developer & N8N Backend",
+      "description": "Fullstack development for a mining services company, a business idea from the Arkabia ecosystem. React frontend and backend built entirely with N8N. Production mining cost calculation system.",
+      "highlights": [
+        "Technical project lead — architecture and system decisions",
+        "React frontend with design from Figma",
+        "100% N8N backend: gravitational table cost calculation",
+        "Estimates for electricity, water and mineral pricing",
+        "Relational database design and modeling"
+      ]
+    },
+    "arkabia-dev": {
+      "role": "Fullstack Developer",
+      "description": "Fullstack development on Peru's most important foreign trade SaaS platform. Agile team with Scrum, building critical modules with React + TypeScript and domain-oriented architecture.",
+      "highlights": [
+        "Frontend development using React, Figma, CSS and Tailwind",
+        "Backend development using JavaScript, TypeScript and C#",
+        "Relational and non-relational database design and modeling",
+        "Architecture definition, business flows and system structure",
+        "Team coordination under Scrum methodology",
+        "Use of Git, GitHub, Postman and collaborative tools"
+      ]
+    },
+    "darkfunnels-dev": {
+      "role": "Fullstack Developer & Automation",
+      "description": "Fullstack development for a WhatsApp marketing automation platform with AI. A business idea from the Arkabia ecosystem. Angular frontend and N8N backend with voice AI and personalized video integration.",
+      "highlights": [
+        "Full Angular frontend for campaign management",
+        "N8N backend with complex conversation flows",
+        "Voice AI integration for automatic audio messages",
+        "Personalized videos generated with AI per lead",
+        "WhatsApp Business API integration in production"
+      ]
+    },
+    "lexcoim-dev": {
+      "role": "Backend Developer",
+      "description": "C# and Python backend for a platform predicting product import success from China to the Peruvian market. AI analysis and automated profitability estimates.",
+      "highlights": [
+        "Analysis engine in C# and Python",
+        "Success prediction for imports from China to Peru",
+        "Automated profitability and demand estimates",
+        "Platform in production (currently inactive)"
+      ]
+    },
+    "preventys": {
+      "role": "IT and Systems Assistant",
+      "description": "Technical IT support for an occupational health company with presence in Lima and Cajamarca. Web interface creation and Microsoft tools support.",
+      "highlights": [
+        "Web interface creation and maintenance (HTML, CSS, JavaScript)",
+        "Microsoft tools support for management and project reports",
+        "Support for mining sector projects",
+        "Collaborative work with technical and administrative teams"
+      ]
+    },
+    "usp-course": {
+      "role": "Course — Human-Data Interaction",
+      "description": "Human-Data Interaction mini-course taught by PhD. Marcelo Morandini (EACH/USP) as part of the International Winter School organized by UPC. Official certificate from the University of São Paulo.",
+      "highlights": [
+        "Human-Data Interaction — data and user-centered design",
+        "International Winter School — UPC × EACH/USP",
+        "Taught by PhD. Marcelo Morandini",
+        "Official EACH/USP certificate · Jul–Sep 2024"
+      ]
+    },
+    "scrum-certified": {
+      "role": "Scrum Fundamentals Certified (SFC™)",
+      "description": "Official Scrum Fundamentals Certified (SFC™) certification issued by SCRUMstudy/VMEdu. Certifies mastery of Scrum fundamentals applied in software project management.",
+      "highlights": [
+        "Scrum Fundamentals Certified — SFC™ designation",
+        "Scrum methodology: roles, events, artifacts and values",
+        "Certificate ID: 1029180 · Issued April 30, 2024",
+        "Verifiable at SCRUMstudy.com"
+      ]
+    },
+    "n8n-specialist": {
+      "role": "N8N Automation & AI Specialist",
+      "description": "Design and development of automated workflows with N8N for various clients. Ethical scraping, AI automation, automatic calls and multi-platform data pipelines.",
+      "highlights": [
+        "Ethical scraping and structured data processing",
+        "LLM automations — classification, summary and responses",
+        "WhatsApp call and message automation",
+        "ETL pipelines: Notion, Gmail, SQL and more synchronization",
+        "Notification and follow-up bots for clients"
+      ]
+    },
+    "upc-degree": {
+      "role": "Software Engineering — 7th Semester",
+      "description": "Software engineering education with real fullstack team projects. DDD architectures, RESTful APIs, modern frontends and agile methodologies. Currently in the 7th semester.",
+      "highlights": [
+        "SplitEasy: Spring Boot + Angular with complete DDD and JWT",
+        "WorkStation: C# .NET + Vue.js with clean architecture and Swagger",
+        "Smart Parking Barrier: Arduino + C++ with gas and ultrasonic sensors",
+        "Synera App: Kotlin (managers) + Flutter (workers) with REST APIs",
+        "Scrum, Figma, Postman and professional tools management"
+      ]
+    },
+    "coursera-sdn": {
+      "role": "Course — Software Defined Networking",
+      "description": "Software Defined Networking course taught by Prof. Nick Feamster from the University of Chicago. Covers network architecture, SDN, network analysis and modern networking models.",
+      "highlights": [
+        "Software-Defined Networking and modern architectures",
+        "Network Analysis and Network Model",
+        "Computer Networking and Network Architecture",
+        "Verifiable certificate: coursera.org/verify/L7CT923TLCPP"
+      ]
+    },
+    "coursera-neuroscience": {
+      "role": "Course — Computational Neuroscience",
+      "description": "Computational Neuroscience MOOC from the University of Washington taught by Dr. Rajesh P.N. Rao and Dr. Adrienne Fairhall. Covers computational neuroscience, data analysis, linear algebra and statistics.",
+      "highlights": [
+        "Computational Neuroscience — fundamentals and models",
+        "Data Analysis, Linear Algebra and General Statistics applied",
+        "Taught by Computer Science & Physiology UW professors",
+        "Verifiable certificate: coursera.org/verify/FBRJQ5NFZE8Z"
+      ]
+    },
+    "coursera-arduino": {
+      "role": "Course — Arduino and Applications",
+      "description": "Arduino and applications course from UNAM taught by Mtro. Yukihiro Minami Koyama. Covers programming, embedded software architecture and practical Arduino applications.",
+      "highlights": [
+        "Embedded systems programming and architecture",
+        "Practical applications with Arduino",
+        "Computer Architecture and Software Architecture",
+        "Verifiable certificate: coursera.org/verify/4SWRALKZMDDK"
+      ]
+    }
+  },
+  "projects_data": {
+    "arkabia-platform": {
+      "title": "Arkabia — Foreign Trade SaaS",
+      "description": "Peruvian SaaS platform for importers, exporters and customs agents. Document management, procedures and real-time flows."
+    },
+    "darkfunnels-fullstack": {
+      "title": "DarkFunnels.ai — Fullstack AI Platform",
+      "description": "Fullstack WhatsApp marketing automation platform with AI. Angular frontend + N8N backend. Voice, personalized videos and intelligent flows in production."
+    },
+    "meproind-fullstack": {
+      "title": "Meproind — Mining Fullstack System",
+      "description": "Fullstack platform for mining company. React frontend + N8N backend. Calculates gravitational table costs, water flow, electricity and mineral pricing."
+    },
+    "spliteasy-fullstack": {
+      "title": "SplitEasy — Shared Expenses",
+      "description": "App for group expense management. Main backend in Java Spring Boot with DDD architecture. Angular integration frontend."
+    },
+    "workstation": {
+      "title": "WorkStation — Team Management",
+      "description": "Fullstack system for work team management. C# .NET backend with clean architecture and Vue.js frontend."
+    },
+    "video-chat-app": {
+      "title": "Video Chat App — WebRTC",
+      "description": "Real-time video calling app with TypeScript and WebRTC. Peer-to-peer communication without an intermediary server."
+    },
+    "windows7-emulator": {
+      "title": "Windows 7 Online Emulator",
+      "description": "Windows 7 emulator in the browser with integrated Visual Studio. Pure Angular, TypeScript, no backend. Includes physical Arduino emulator."
+    },
+    "ecocrop-landing": {
+      "title": "EcoCrop — Landing Page",
+      "description": "Landing page for the EcoCrop agricultural app, developed by GreenSprout Innovations at UPC. Responsive design and CSS animations."
+    },
+    "cita-app": {
+      "title": "Cita — Date Ideas",
+      "description": "Web page for date ideas and planning. Modern interface with vanilla JavaScript."
+    },
+    "skilhub": {
+      "title": "SkilHub — Educational Platform",
+      "description": "Educational web platform with modern interface. CSS Grid, Flexbox and pure vanilla JavaScript."
+    },
+    "para-ti-flutter": {
+      "title": "Para Ti — Personal Flutter App",
+      "description": "Mobile app developed in Flutter as a gift for his girlfriend. Messages, surprises and personalized content for when she felt sad."
+    },
+    "synera-kotlin": {
+      "title": "Synera Manager — Kotlin App (Managers)",
+      "description": "Native Android Kotlin app for company managers. Staff management, corporate announcements, chat groups and activity control."
+    },
+    "synera-flutter": {
+      "title": "Synera Worker — Flutter App (Workers)",
+      "description": "Flutter app for company workers. Corporate announcement viewing, chat room access and assigned activity management."
+    },
+    "darkfunnels-automation": {
+      "title": "DarkFunnels.ai — N8N Backend",
+      "description": "Complete N8N backend for WhatsApp AI marketing platform. Automatic voice, AI videos and intelligent conversation flows."
+    },
+    "meproind-automation": {
+      "title": "Meproind — Mining N8N Backend",
+      "description": "N8N backend for mining cost calculation. Gravitational tables, electricity consumption, water and mineral price estimates."
+    },
+    "n8n-scraping-ai": {
+      "title": "N8N — Scraping, AI & Calls",
+      "description": "N8N workflow collection: ethical scraping, AI automations, automatic calls and multi-platform data pipelines."
+    },
+    "lexcoim-backend": {
+      "title": "Lexcoim.ai — Prediction Engine",
+      "description": "C# and Python backend for predicting import product success from China to Peru. Market analysis and automated profitability estimates."
+    },
+    "secret-friend": {
+      "title": "Secret Friend — Gift Exchange",
+      "description": "Web app for Secret Friend game. Fair random assignment — no duplicates or self-assignment. Pure JavaScript backend."
+    },
+    "electrogest": {
+      "title": "ElectroGest — Appliance Management",
+      "description": "Management software for home appliance sales businesses. Algorithms and data structures implemented in C++."
+    },
+    "smart-parking": {
+      "title": "Smart Parking Barrier",
+      "description": "Arduino vehicle control system with ultrasonic sensors, joystick, MQ-135 gas detection and automatic barrier with emergency mode."
+    },
+    "3d-console": {
+      "title": "3D Console — OLED 3D Engine",
+      "description": "Console with 3D engine built from scratch in C++. 3D games and animations rendered on an OLED screen on embedded hardware."
+    },
+    "retro-console": {
+      "title": "RetroConsole — Retro Console",
+      "description": "Retro game console in C++. Classic games implemented from scratch on embedded hardware. MIT License."
+    },
+    "pastillero-ino": {
+      "title": "Smart Pill Box",
+      "description": "IoT Arduino device for medication reminders. LCD display, buzzer and physical buttons."
+    },
+    "game-cpp": {
+      "title": "GameC++ — C++ Video Game",
+      "description": "Video game implemented from scratch in C++. Custom engine with console graphics and collision logic."
+    },
+    "assistant-pe": {
+      "title": "AssistantPe — Peru AI Assistant",
+      "description": "Virtual assistant with Peruvian context. LLMs with Python for queries and local automation."
+    },
+    "dibujo-python": {
+      "title": "DibujoPhyton — Generative Art",
+      "description": "Algorithmic drawing generation with Python. Generative art and mathematical visualizations."
+    }
+  }
+}
