@@ -1,39 +1,23 @@
-# Jorge Luis Díaz Fiestas — Portfolio
+<div align="center">
 
-Portafolio personal fullstack construido con React + Vite + TypeScript (frontend) y Node.js + Express + TypeScript (backend), siguiendo arquitectura **Domain Driven Design (DDD)** en ambos lados.
+# Jorge Luis Díaz Fiestas
+### Fullstack Developer · N8N Automation · UPC Lima, Perú 🏔️
+
+[![Portfolio](https://img.shields.io/badge/Portfolio-Live-00ffcc?style=for-the-badge&logo=vercel&logoColor=black)](https://portfolio-omega-peach-65.vercel.app/)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/luis-d%C3%ADaz-b2b537293/)
+[![GitHub](https://img.shields.io/badge/GitHub-LuisDiazpe-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/LuisDiazpe)
+
+</div>
 
 ---
 
-## Arquitectura
+## Sobre este proyecto
 
-```
-portfolio/
-├── src/                          # Frontend React
-│   ├── domain/                   # Entidades puras, interfaces, validaciones
-│   │   ├── project/
-│   │   ├── contact/
-│   │   └── skill/
-│   ├── application/              # Casos de uso
-│   │   ├── project/
-│   │   └── contact/
-│   ├── infrastructure/           # Implementaciones concretas
-│   │   └── repositories/
-│   ├── presentation/             # React — componentes, hooks, páginas
-│   │   ├── components/
-│   │   │   ├── ui/
-│   │   │   ├── sections/
-│   │   │   └── layout/
-│   │   ├── hooks/
-│   │   └── pages/
-│   └── shared/                   # Constantes, tipos globales
-│
-└── backend/                      # Backend Node.js
-    └── src/
-        ├── domain/contact/       # Entidad + interfaz EmailService
-        ├── application/          # SendContactUseCase + validación Zod
-        ├── infrastructure/email/ # NodemailerEmailService
-        └── interfaces/http/      # Controller + Router Express
-```
+Portafolio personal fullstack construido desde cero con **arquitectura DDD (Domain Driven Design)** en frontend y backend. Diseñado con identidad visual propia inspirada en las auroras boreales y las montañas de Cajamarca.
+
+Incluye una alpaca 3D animada con animaciones reales (walk, idle, eating, hit react) que reacciona al mouse y al click. El fondo es un canvas WebGL con auroras procedurales y silueta de montañas en capas.
+
+Disponible en **3 idiomas**: Español 🇵🇪 · English 🇺🇸 · Português 🇧🇷
 
 ---
 
@@ -41,151 +25,130 @@ portfolio/
 
 ### Frontend
 | Tech | Uso |
-|------|-----|
+|---|---|
 | React 18 + Vite | Framework + bundler |
-| TypeScript strict | Tipado completo |
-| Tailwind CSS v3 | Estilos con tema aurora |
+| TypeScript strict | Tipado completo en toda la app |
+| Tailwind CSS v3 | Sistema de diseño con tema aurora |
 | Framer Motion | Animaciones y transiciones |
+| Three.js + @react-three/fiber | Modelo 3D de la alpaca |
+| @react-three/drei | Helpers y animaciones GLB |
+| react-i18next | Internacionalización ES/EN/PT |
 | React Hook Form | Formulario de contacto |
 | Zod | Validación de esquemas |
 | Lucide React | Íconos |
 
 ### Backend
 | Tech | Uso |
-|------|-----|
+|---|---|
 | Node.js + Express | Servidor HTTP |
 | TypeScript strict | Tipado completo |
 | Nodemailer | Envío de emails vía Gmail |
 | Zod | Validación de inputs |
 | Helmet | Headers de seguridad |
-| express-rate-limit | Protección anti-spam (5 req/15min) |
-| CORS configurado | Solo tu dominio frontend |
+| express-rate-limit | Anti-spam (5 req / 15 min) |
+| CORS configurado | Solo dominio frontend permitido |
+
+---
+
+## Arquitectura DDD
+
+```
+portfolio/
+├── src/
+│   ├── domain/                   # Entidades puras — sin dependencias de framework
+│   │   ├── project/              # Project entity, ProjectRepository interface
+│   │   ├── contact/              # ContactMessage entity, validación de dominio
+│   │   └── skill/                # Skill entity
+│   ├── application/              # Casos de uso
+│   │   ├── project/              # GetProjectsByCategory, GetFeaturedProjects
+│   │   └── contact/              # SendContactMessage
+│   ├── infrastructure/           # Implementaciones concretas
+│   │   └── repositories/         # InMemoryProjectRepository, ApiContactRepository
+│   ├── presentation/             # React — UI pura, sin lógica de negocio
+│   │   ├── components/
+│   │   │   ├── ui/               # Átomos: FadeIn, SectionHeader, LanguageSwitcher
+│   │   │   ├── sections/         # Hero, About, Skills, Experience, Projects, Contact
+│   │   │   └── layout/           # Navbar, Footer, AuroraBackground
+│   │   ├── hooks/                # useProjects, useContact, useScrollSpy
+│   │   └── pages/
+│   └── shared/
+│       ├── constants/            # skillsData, experienceData
+│       └── i18n/                 # Traducciones ES / EN / PT
+│
+└── backend/
+    └── src/
+        ├── domain/contact/       # ContactMessage entity + IEmailService interface
+        ├── application/          # SendContactUseCase + validación Zod
+        ├── infrastructure/email/ # NodemailerEmailService (Gmail)
+        └── interfaces/http/      # ContactController + ContactRouter
+```
+
+La **inyección de dependencias** se resuelve en `App.tsx` — los repositorios e infraestructura se instancian ahí y se pasan a los casos de uso. Los componentes React no conocen la implementación concreta.
 
 ---
 
 ## Setup local
 
-### 1. Frontend
+### Frontend
 
 ```bash
-# En la raíz del proyecto
 npm install
-npm run dev
-# → http://localhost:5173
+npm run dev        # → http://localhost:5173
 ```
 
-### 2. Backend
+### Backend
 
 ```bash
 cd backend
 npm install
-
-# Configurar variables de entorno
-cp .env.example .env
-# Editar .env con tus credenciales de Gmail (ver instrucciones abajo)
-
-npm run dev
-# → http://localhost:3001
+cp .env.example .env   # completar con credenciales Gmail
+npm run dev            # → http://localhost:3001
 ```
 
-### 3. Variables de entorno (.env)
+---
 
-```env
-PORT=3001
-NODE_ENV=development
-ALLOWED_ORIGINS=http://localhost:5173
-GMAIL_USER=tu-correo@gmail.com
-GMAIL_APP_PASSWORD=xxxx xxxx xxxx xxxx
-CONTACT_RECEIVER=tu-correo@gmail.com
+## Scripts
+
+```bash
+# Frontend
+npm run dev          # Servidor de desarrollo
+npm run build        # Build de producción
+npm run preview      # Preview del build
+npm run type-check   # TypeScript sin compilar
+
+# Backend
+npm run dev          # Hot-reload con ts-node-dev
+npm run build        # Compilar a dist/
+npm run start        # Ejecutar build (producción)
 ```
-
-### 4. Configurar Gmail App Password
-
-1. Activa **Verificación en 2 pasos** en tu cuenta Google
-2. Ve a: **Cuenta Google → Seguridad → Contraseñas de aplicación**
-3. Crea una nueva → selecciona "Correo" + "Otro (nombre personalizado)" → escribe "Portfolio"
-4. Copia la contraseña de **16 caracteres** que aparece
-5. Pégala en `GMAIL_APP_PASSWORD` (sin espacios o con espacios, ambos funcionan)
 
 ---
 
 ## Deploy
 
-### Frontend → Vercel (gratis)
+- **Frontend** → [Vercel](https://vercel.com) — build automático desde `main`
+- **Backend** → [Render](https://render.com) — free tier con keep-alive externo
 
-```bash
-# Instala Vercel CLI
-npm i -g vercel
-
-# Desde la raíz del proyecto
-vercel
-
-# Variables de entorno en Vercel:
-# VITE_API_URL = https://tu-backend.railway.app
+Variable de entorno requerida en Vercel:
 ```
-
-### Backend → Railway (gratis tier)
-
-1. Crea cuenta en [railway.app](https://railway.app)
-2. **New Project → Deploy from GitHub repo**
-3. Selecciona la carpeta `backend/` como root
-4. Agrega las variables de entorno en el panel de Railway:
-   - `NODE_ENV=production`
-   - `GMAIL_USER=tu-correo@gmail.com`
-   - `GMAIL_APP_PASSWORD=...`
-   - `CONTACT_RECEIVER=tu-correo@gmail.com`
-   - `ALLOWED_ORIGINS=https://tu-portfolio.vercel.app`
-5. Railway detecta automáticamente el `package.json` y hace el build
-
-### Una vez deployado
-
-Actualiza `VITE_API_URL` en Vercel con la URL de Railway y redeploy el frontend.
+VITE_API_URL = https://tu-backend.onrender.com
+```
 
 ---
 
-## Agregar imágenes de proyectos
+## Personalización rápida
 
-Cuando tengas capturas de tus proyectos:
-
-1. Colócalas en `public/projects/` (ej: `arkabia.webp`)
-2. En `src/infrastructure/repositories/projectsData.ts`, agrega `imageUrl`:
-
-```ts
-{
-  id: 'arkabia-platform',
-  imageUrl: '/projects/arkabia.webp',
-  // ...
-}
-```
-
-Formatos recomendados: **WebP** (mejor compresión), 800×500px mínimo.
+| Qué cambiar | Archivo |
+|---|---|
+| Proyectos | `src/infrastructure/repositories/projectsData.ts` |
+| Skills | `src/shared/constants/skillsData.ts` |
+| Experiencia | `src/shared/constants/experienceData.ts` |
+| Traducciones | `src/shared/i18n/locales/es.json` · `en.json` · `pt.json` |
+| Colores aurora | `tailwind.config.js` + `src/index.css` |
+| Modelo 3D | `public/Llama.glb` |
 
 ---
 
-## Personalización
+## Licencia
 
-- **Proyectos** → `src/infrastructure/repositories/projectsData.ts`
-- **Skills** → `src/shared/constants/skillsData.ts`
-- **Experiencia** → `src/shared/constants/experienceData.ts`
-- **Colores aurora** → `tailwind.config.js` y `src/index.css`
-- **Contacto anti-scraping** → `src/presentation/components/sections/ContactSection.tsx` (función `getContactLinks`)
-
----
-
-## Scripts disponibles
-
-### Frontend
-```bash
-npm run dev        # Servidor de desarrollo
-npm run build      # Build de producción
-npm run preview    # Preview del build
-npm run type-check # Verificar TypeScript sin compilar
-```
-
-### Backend
-```bash
-npm run dev        # Servidor con hot-reload (ts-node-dev)
-npm run build      # Compilar TypeScript a dist/
-npm run start      # Ejecutar build compilado (producción)
-npm run type-check # Verificar TypeScript sin compilar
-```
+MIT © 2025 Jorge Luis Díaz Fiestas 
