@@ -13,14 +13,14 @@ export function createApp() {
   //Security middleware
   app.use(helmet())
 
-  // CORS — only allow your frontend domain
+  // CORS
   const allowedOrigins = (process.env.ALLOWED_ORIGINS ?? 'http://localhost:5173')
     .split(',')
     .map(o => o.trim())
 
   app.use(cors({
     origin: (origin, callback) => {
-      // Allow requests with no origin (e.g. Postman, same-origin)
+      // Allow requests with no origin
       if (!origin || allowedOrigins.includes(origin)) {
         callback(null, true)
       } else {
@@ -35,8 +35,8 @@ export function createApp() {
 
   //Rate limiting
   const contactLimiter = rateLimit({
-    windowMs: 15 * 60 * 1000, // 15 minutes
-    max: 5,                    // max 5 requests per window per IP
+    windowMs: 18 * 60 * 1000, // 18 minutes
+    max: 7,                    // max 7 requests per window per IP
     standardHeaders: true,
     legacyHeaders: false,
     message: { success: false, error: 'Demasiados intentos. Espera 15 minutos.' },

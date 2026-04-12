@@ -20,12 +20,16 @@ export class NodemailerEmailService implements EmailService {
       )
     }
 
-    console.log(`[Email] Initializing transporter for ${user} (pass length: ${pass.length})`)
 
     this.transporter = nodemailer.createTransport({
       host: 'smtp.gmail.com',
       port: 465,
       secure: true,
+
+      connectionTimeout: 20000, // 20 segundos para establecer la conexión inicial
+      greetingTimeout: 20000,   // 20 segundos para esperar el saludo del servidor
+      socketTimeout: 20000,     // 20 segundos de inactividad máxima permitida
+
       auth: { user, pass },
     })
 
