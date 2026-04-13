@@ -5,7 +5,7 @@ import rateLimit from 'express-rate-limit'
 import { createContactRouter } from './interfaces/http/ContactRouter'
 import { ContactController } from './interfaces/http/ContactController'
 import { SendContactUseCase } from './application/SendContactUseCase'
-import { NodemailerEmailService } from './infrastructure/email/NodemailerEmailService'
+import { ResendEmailService } from './infrastructure/email/ResendEmailService'
 
 export function createApp() {
   const app = express()
@@ -15,8 +15,8 @@ export function createApp() {
 
   // CORS
   const allowedOrigins = (process.env.ALLOWED_ORIGINS ?? 'http://localhost:5173')
-    .split(',')
-    .map(o => o.trim())
+      .split(',')
+      .map(o => o.trim())
 
   app.use(cors({
     origin: (origin, callback) => {
@@ -43,7 +43,7 @@ export function createApp() {
   })
 
   //Dependency injection
-  const emailService = new NodemailerEmailService()
+  const emailService = new ResendEmailService()
   const useCase      = new SendContactUseCase(emailService)
   const controller   = new ContactController(useCase)
 
