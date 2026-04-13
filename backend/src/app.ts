@@ -10,6 +10,7 @@ import { ResendEmailService } from './infrastructure/email/ResendEmailService'
 export function createApp() {
   const app = express()
 
+
   //Security middleware
   app.use(helmet())
 
