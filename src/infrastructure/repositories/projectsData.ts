@@ -470,7 +470,7 @@ export const PROJECTS_DATA: Project[] = [
       { name: '.NET', color: 'violet' },
     ],
     imagePlaceholder: 'LX',
-    featured: true,
+    featured: false,
     year: 2024,
     highlights: [
       'Motor de análisis en C# y Python',
