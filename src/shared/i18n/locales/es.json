@@ -30,7 +30,7 @@
     "tag": "// sobre mí",
     "title": "Ingeniero de software",
     "subtitle": "apasionado por innovar",
-    "p1": "Soy Jorge, 19 años, de <strong>Cajamarca, Perú</strong>. Estudio Ingeniería de Software en la UPC y trabajo como <strong>Fullstack Developer</strong> en <link>Arkabia</link>, donde además lidero técnicamente el proyecto <strong>Meproind</strong>.",
+    "p1": "Soy Jorge, 20 años, de <strong>Cajamarca, Perú</strong>. Estudio Ingeniería de Software en la UPC y trabajo como <strong>Fullstack Developer</strong> en <link>Arkabia</link>, donde además lidero técnicamente el proyecto <strong>Meproind</strong>.",
     "p2": "Trabajo con React, Angular, Java, TypeScript, C# y Python. Diseño y modelo bases de datos relacionales y no relacionales, defino arquitecturas y coordino equipos bajo <strong>Scrum</strong>. Además automatizo procesos con <strong>N8N</strong> e IA para clientes reales en producción.",
     "p3": "Autodidacta por naturaleza. Aprendo construyendo cosas reales y busco siempre la solución más limpia, escalable y mantenible.",
     "motto_label": "// lema",
@@ -47,7 +47,7 @@
       "lang_title": "Trilingüe",
       "lang_desc": "Español nativo · English B2 (Cambridge) · Português intermediário",
       "loc_title": "Cajamarca, Perú 🏔️",
-      "loc_desc": "19 años. Aspiring Software Engineer at Microsoft."
+      "loc_desc": "20 años. Aspiring Software Engineer at Microsoft."
     }
   },
   "skills": {

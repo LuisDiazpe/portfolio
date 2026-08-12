@@ -30,7 +30,7 @@
     "tag": "// sobre mim",
     "title": "Engenheiro de software",
     "subtitle": "apaixonado por inovar",
-    "p1": "Sou Jorge, 19 anos, de <strong>Cajamarca, Peru</strong>. Estudo Engenharia de Software na UPC e trabalho como <strong>Fullstack Developer</strong> na <link>Arkabia</link>, onde também lidero tecnicamente o projeto <strong>Meproind</strong>.",
+    "p1": "Sou Jorge, 20 anos, de <strong>Cajamarca, Peru</strong>. Estudo Engenharia de Software na UPC e trabalho como <strong>Fullstack Developer</strong> na <link>Arkabia</link>, onde também lidero tecnicamente o projeto <strong>Meproind</strong>.",
     "p2": "Trabalho com React, Angular, Java, TypeScript, C# e Python. Projeto e modelo bancos de dados relacionais e não relacionais, defino arquiteturas e coordeno equipes com <strong>Scrum</strong>. Também automatizo processos com <strong>N8N</strong> e IA para clientes reais em produção.",
     "p3": "Autodidata por natureza. Aprendo construindo coisas reais e sempre busco a solução mais limpa, escalável e sustentável.",
     "motto_label": "// lema",
@@ -47,7 +47,7 @@
       "lang_title": "Trilíngue",
       "lang_desc": "Espanhol nativo · Inglês B2 (Cambridge) · Português intermediário",
       "loc_title": "Cajamarca, Peru 🏔️",
-      "loc_desc": "19 anos. Aspirante a Engenheiro de Software na Microsoft."
+      "loc_desc": "20 anos. Aspirante a Engenheiro de Software na Microsoft."
     }
   },
   "skills": {
@@ -249,6 +249,8 @@
       "description": "Formação em engenharia de software com projetos fullstack reais em equipe. Arquiteturas DDD, APIs RESTful, frontends modernos e metodologias ágeis. Atualmente no 8º semestre.",
       "highlights": [
         "Top 10% do curso — distinção de mérito acadêmico",
+        "Car2Go: microsserviços Java/Spring + Angular com Stripe e certificação por mecânicos",
+        "SkillShare: app Flutter + backend monolítico C# .NET com notificações e CI/CD",
         "SplitEasy: Spring Boot + Angular com DDD completo e JWT",
         "WorkStation: C# .NET + Vue.js com arquitetura limpa e Swagger",
         "Smart Parking Barrier: Arduino + C++ com sensores de gás e ultrassom",
@@ -299,6 +301,14 @@
     "meproind-fullstack": {
       "title": "Meproind — Plataforma Industrial IoT",
       "description": "Plataforma industrial para empresa minerária: monitoramento e cálculo de custos de mesas gravimétricas, eletricidade e consumo de água. Frontend React multilíngue (i18n) + backend N8N. Em produção."
+    },
+    "car2go": {
+      "title": "Car2Go — Marketplace de Carros Certificados",
+      "description": "Marketplace de carros usados com revisão e certificação por mecânicos. Microsserviços Java Spring + frontend Angular, pagamentos com Stripe e ranking de vendedores e mecânicos."
+    },
+    "skillshare": {
+      "title": "SkillShare — Grupos de Estudo",
+      "description": "App móvel Flutter para criar grupos de estudo: ideias, debates e materiais compartilhados, com notificações. Backend monolítico em C# .NET com APIs RESTful."
     },
     "spliteasy-fullstack": {
       "title": "SplitEasy — Despesas Compartilhadas",

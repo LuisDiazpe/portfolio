@@ -27,21 +27,21 @@ export function AboutSection() {
               <p className="text-text-muted leading-relaxed text-[1.05rem]">
                 {/* p1 — manually handle since JSX interpolation */}
                 {t('about.tag') === '// sobre mí' && <>
-                  Soy Jorge, 19 años, de <strong className="text-text-primary font-semibold">Cajamarca, Perú</strong>.
+                  Soy Jorge, 20 años, de <strong className="text-text-primary font-semibold">Cajamarca, Perú</strong>.
                   Estudio Ingeniería de Software en la UPC y trabajo como{' '}
                   <strong className="text-text-primary font-semibold">Fullstack Developer</strong> en{' '}
                   <a href="https://arkabia.com" target="_blank" rel="noreferrer" className="text-aurora-cyan hover:underline font-semibold">Arkabia</a>,
                   donde además lidero técnicamente el proyecto <a href="https://app.meproind.com" target="_blank" rel="noreferrer" className="text-aurora-cyan hover:underline font-semibold">Meproind</a>.
                 </>}
                 {t('about.tag') === '// about me' && <>
-                  I'm Jorge, 19 years old, from <strong className="text-text-primary font-semibold">Cajamarca, Peru</strong>.
+                  I'm Jorge, 20 years old, from <strong className="text-text-primary font-semibold">Cajamarca, Peru</strong>.
                   I study Software Engineering at UPC and work as a{' '}
                   <strong className="text-text-primary font-semibold">Fullstack Developer</strong> at{' '}
                   <a href="https://arkabia.com" target="_blank" rel="noreferrer" className="text-aurora-cyan hover:underline font-semibold">Arkabia</a>,
                   where I also technically lead the <a href="https://app.meproind.com" target="_blank" rel="noreferrer" className="text-aurora-cyan hover:underline font-semibold">Meproind</a> project.
                 </>}
                 {t('about.tag') === '// sobre mim' && <>
-                  Sou Jorge, 19 anos, de <strong className="text-text-primary font-semibold">Cajamarca, Peru</strong>.
+                  Sou Jorge, 20 anos, de <strong className="text-text-primary font-semibold">Cajamarca, Peru</strong>.
                   Estudo Engenharia de Software na UPC e trabalho como{' '}
                   <strong className="text-text-primary font-semibold">Fullstack Developer</strong> na{' '}
                   <a href="https://arkabia.com" target="_blank" rel="noreferrer" className="text-aurora-cyan hover:underline font-semibold">Arkabia</a>,

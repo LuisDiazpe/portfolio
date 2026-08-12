@@ -185,6 +185,8 @@ export const EXPERIENCE_DATA: Experience[] = [
         'Formación en ingeniería de software con proyectos fullstack reales en equipo. Arquitecturas DDD, APIs RESTful, frontends modernos y metodologías ágiles. Actualmente en 8° semestre.',
     highlights: [
       'Décimo Superior — Top 10% de la carrera',
+      'Car2Go: microservicios Java/Spring + Angular con Stripe y certificación por mecánicos',
+      'SkillShare: app Flutter + backend C# .NET (monolito) con notificaciones y CI/CD',
       'SplitEasy: Spring Boot + Angular con DDD completo y JWT',
       'WorkStation: C# .NET + Vue.js con arquitectura limpia y Swagger',
       'Smart Parking Barrier: Arduino + C++ con sensores de gas y ultrasonido',
