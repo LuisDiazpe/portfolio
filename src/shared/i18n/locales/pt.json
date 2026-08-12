@@ -10,7 +10,7 @@
   "hero": {
     "available": "Disponível para oportunidades",
     "roles": [
-      "Desenvolvedor Fullstack",
+      "Desenvolvedor Fullstack & IoT",
       "Automação N8N",
       "UPC · Lima, Peru"
     ],
@@ -41,7 +41,7 @@
       "arkabia_title": "Fullstack Developer na Arkabia",
       "arkabia_desc": "React, Angular, TypeScript, C#, Java. Líder técnico do Meproind. Set 2024 — Presente.",
       "upc_title": "Engenharia de Software — UPC",
-      "upc_desc": "7º semestre. DDD, arquiteturas limpas e projetos fullstack reais em equipe.",
+      "upc_desc": "8º semestre · Top 10% do curso. DDD, arquiteturas limpas e projetos fullstack reais em equipe.",
       "n8n_title": "Automação com N8N & IA",
       "n8n_desc": "Fluxos, bots, scraping, chamadas automáticas e integrações multiplataforma.",
       "lang_title": "Trilíngue",
@@ -67,7 +67,8 @@
       "mobile": "Mobile",
       "database": "Bancos de dados",
       "automation": "Automação",
-      "tools": "Ferramentas & DevOps"
+      "tools": "Ferramentas & DevOps",
+      "cloud": "Cloud & Deploy"
     }
   },
   "experience": {
@@ -159,14 +160,14 @@
   },
   "experience_data": {
     "meproind-dev": {
-      "role": "Desenvolvedor Fullstack & Backend N8N",
-      "description": "Desenvolvimento fullstack para empresa de serviços minerários, ideia de negócio do ecossistema Arkabia. Frontend em React e backend construído inteiramente com N8N. Sistema de cálculo de custos operacionais minerários em produção.",
+      "role": "Líder Técnico · Fullstack & IoT",
+      "description": "Líder técnico da plataforma para empresa de serviços minerários (ideia de negócio do ecossistema Arkabia), hoje em produção. Frontend React multilíngue (i18n) e backend construído inteiramente com N8N, com camada IoT/industrial para monitoramento e cálculo de custos operacionais.",
       "highlights": [
-        "Líder técnico do projeto — arquitetura e decisões de sistema",
-        "Frontend em React com design e modelagem no Figma",
+        "Líder técnico: arquitetura, fluxos de negócio e decisões de sistema",
+        "Frontend React multilíngue (i18n: espanhol, inglês e português)",
         "Backend 100% N8N: cálculo de custos de mesas gravimétricas",
-        "Estimativas de consumo elétrico, água e preços por mineral",
-        "Design e modelagem de bancos de dados relacionais"
+        "Camada IoT/industrial: eletricidade, consumo de água e preços por mineral",
+        "Modelagem de bancos de dados e deploy na nuvem — em produção"
       ]
     },
     "arkabia-dev": {
@@ -244,9 +245,10 @@
       ]
     },
     "upc-degree": {
-      "role": "Engenharia de Software — 7º Semestre",
-      "description": "Formação em engenharia de software com projetos fullstack reais em equipe. Arquiteturas DDD, APIs RESTful, frontends modernos e metodologias ágeis. Atualmente no 7º semestre.",
+      "role": "Engenharia de Software — 8º Semestre",
+      "description": "Formação em engenharia de software com projetos fullstack reais em equipe. Arquiteturas DDD, APIs RESTful, frontends modernos e metodologias ágeis. Atualmente no 8º semestre.",
       "highlights": [
+        "Top 10% do curso — distinção de mérito acadêmico",
         "SplitEasy: Spring Boot + Angular com DDD completo e JWT",
         "WorkStation: C# .NET + Vue.js com arquitetura limpa e Swagger",
         "Smart Parking Barrier: Arduino + C++ com sensores de gás e ultrassom",
@@ -295,8 +297,8 @@
       "description": "Plataforma fullstack de automação de marketing no WhatsApp com IA. Frontend Angular + backend N8N. Voz, vídeos personalizados e fluxos inteligentes em produção."
     },
     "meproind-fullstack": {
-      "title": "Meproind — Sistema Minerário Fullstack",
-      "description": "Plataforma fullstack para empresa minerária. Frontend React + backend N8N. Calcula custos de mesas gravimétricas, fluxo de água, eletricidade e preços por mineral."
+      "title": "Meproind — Plataforma Industrial IoT",
+      "description": "Plataforma industrial para empresa minerária: monitoramento e cálculo de custos de mesas gravimétricas, eletricidade e consumo de água. Frontend React multilíngue (i18n) + backend N8N. Em produção."
     },
     "spliteasy-fullstack": {
       "title": "SplitEasy — Despesas Compartilhadas",

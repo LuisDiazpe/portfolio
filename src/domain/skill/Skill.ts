@@ -4,6 +4,7 @@ export type SkillCategory =
   | 'mobile'
   | 'database'
   | 'automation'
+  | 'cloud'
   | 'tools'
   | 'languages';
 

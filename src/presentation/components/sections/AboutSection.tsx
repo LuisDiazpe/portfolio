@@ -31,21 +31,21 @@ export function AboutSection() {
                   Estudio Ingeniería de Software en la UPC y trabajo como{' '}
                   <strong className="text-text-primary font-semibold">Fullstack Developer</strong> en{' '}
                   <a href="https://arkabia.com" target="_blank" rel="noreferrer" className="text-aurora-cyan hover:underline font-semibold">Arkabia</a>,
-                  donde además lidero técnicamente el proyecto <strong className="text-text-primary font-semibold">Meproind</strong>.
+                  donde además lidero técnicamente el proyecto <a href="https://app.meproind.com" target="_blank" rel="noreferrer" className="text-aurora-cyan hover:underline font-semibold">Meproind</a>.
                 </>}
                 {t('about.tag') === '// about me' && <>
                   I'm Jorge, 19 years old, from <strong className="text-text-primary font-semibold">Cajamarca, Peru</strong>.
                   I study Software Engineering at UPC and work as a{' '}
                   <strong className="text-text-primary font-semibold">Fullstack Developer</strong> at{' '}
                   <a href="https://arkabia.com" target="_blank" rel="noreferrer" className="text-aurora-cyan hover:underline font-semibold">Arkabia</a>,
-                  where I also technically lead the <strong className="text-text-primary font-semibold">Meproind</strong> project.
+                  where I also technically lead the <a href="https://app.meproind.com" target="_blank" rel="noreferrer" className="text-aurora-cyan hover:underline font-semibold">Meproind</a> project.
                 </>}
                 {t('about.tag') === '// sobre mim' && <>
                   Sou Jorge, 19 anos, de <strong className="text-text-primary font-semibold">Cajamarca, Peru</strong>.
                   Estudo Engenharia de Software na UPC e trabalho como{' '}
                   <strong className="text-text-primary font-semibold">Fullstack Developer</strong> na{' '}
                   <a href="https://arkabia.com" target="_blank" rel="noreferrer" className="text-aurora-cyan hover:underline font-semibold">Arkabia</a>,
-                  onde também lidero tecnicamente o projeto <strong className="text-text-primary font-semibold">Meproind</strong>.
+                  onde também lidero tecnicamente o projeto <a href="https://app.meproind.com" target="_blank" rel="noreferrer" className="text-aurora-cyan hover:underline font-semibold">Meproind</a>.
                 </>}
               </p>
               <p className="text-text-muted leading-relaxed text-[1.05rem]">

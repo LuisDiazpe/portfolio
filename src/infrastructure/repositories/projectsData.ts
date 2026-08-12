@@ -57,10 +57,10 @@ export const PROJECTS_DATA: Project[] = [
   },
   {
     id: 'meproind-fullstack',
-    title: 'Meproind — Sistema Minero Fullstack',
-    description: 'Plataforma fullstack para empresa minera. Frontend React + backend N8N. Calcula costos de mesas gravimétricas, flujo de agua, electricidad y precios por mineral.',
-    longDescription: 'Meproind es una empresa de servicios mineros con plataforma propia desarrollada como idea de negocio del ecosistema de Arkabia. Frontend en React y backend completamente en N8N con lógica de cálculo de costos operativos mineros.',
-    category: 'fullstack',
+    title: 'Meproind — Plataforma Industrial IoT',
+    description: 'Plataforma industrial para empresa minera: monitoreo y cálculo de costos de mesas gravimétricas, consumo eléctrico y de agua. Frontend React multilenguaje (i18n) + backend N8N. En producción.',
+    longDescription: 'Meproind es una empresa de servicios mineros con plataforma propia, idea de negocio del ecosistema de Arkabia y hoy en producción. Frontend React multilenguaje (i18n: español, inglés y portugués) y backend íntegro en N8N, con un componente IoT/industrial para el monitoreo de mesas gravimétricas, consumo eléctrico y de agua.',
+    category: 'iot',
     status: 'production',
     techs: [
       { name: 'React', color: 'cyan' },
@@ -68,9 +68,11 @@ export const PROJECTS_DATA: Project[] = [
       { name: 'N8N', color: 'orange' },
       { name: 'REST APIs', color: 'violet' },
       { name: 'SQL', color: 'teal' },
+      { name: 'IoT', color: 'orange' },
     ],
     imagePlaceholder: 'MP',
     imageUrl: '/projects/meproind.png',
+    liveUrl: 'https://app.meproind.com',
     featured: true,
     year: 2025,
     highlights: [

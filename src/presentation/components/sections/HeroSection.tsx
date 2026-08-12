@@ -115,7 +115,7 @@ export function HeroSection() {
             {/* Stats */}
             <motion.div variants={stagger.item} className="flex flex-wrap gap-8 md:gap-12 pt-8 mt-4 border-t border-border/30">
               {[
-                { value: '7°',  key: 'stats.semester' },
+                { value: '8°',  key: 'stats.semester' },
                 { value: '3+',  key: 'stats.years' },
                 { value: '12+', key: 'stats.projects' },
                 { value: '3',   key: 'stats.languages' },

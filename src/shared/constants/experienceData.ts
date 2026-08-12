@@ -18,22 +18,23 @@ export const EXPERIENCE_DATA: Experience[] = [
   //2025
   {
     id: 'meproind-dev',
-    role: 'Fullstack Developer & Backend N8N',
+    role: 'Líder Técnico · Fullstack & IoT',
     company: 'Meproind',
+    companyUrl: 'https://app.meproind.com',
     period: '2025 — Actualidad',
     current: true,
     type: 'job',
     sortYear: 2025, sortMonth: 1,
     description:
-        'Desarrollo fullstack para empresa de servicios mineros, idea de negocio del ecosistema Arkabia. Frontend en React y backend construido íntegramente con N8N. Sistema de cálculo de costos operativos mineros en producción.',
+        'Líder técnico del sistema para una empresa de servicios mineros (idea de negocio del ecosistema Arkabia), hoy en producción. Frontend React multilenguaje (i18n) y backend construido íntegramente con N8N, con componente IoT/industrial para el monitoreo y cálculo de costos operativos.',
     highlights: [
-      'Líder técnico del proyecto — arquitectura y decisiones de sistema',
-      'Frontend en React con diseño y modelado desde Figma',
+      'Líder técnico: arquitectura, flujos de negocio y decisiones del sistema',
+      'Frontend React multilenguaje (i18n: español, inglés y portugués)',
       'Backend 100% N8N: cálculo de costos de mesas gravimétricas',
-      'Estimados de consumo eléctrico, agua y precios por mineral',
-      'Diseño y modelado de bases de datos relacionales',
+      'Componente IoT/industrial: consumo eléctrico, agua y precios por mineral',
+      'Modelado de bases de datos y despliegue en la nube — en producción',
     ],
-    techs: ['React', 'TypeScript', 'N8N', 'Figma', 'SQL', 'Webhooks'],
+    techs: ['React', 'TypeScript', 'N8N', 'IoT', 'Figma', 'SQL', 'Webhooks'],
   },
 
   //2024
@@ -174,15 +175,16 @@ export const EXPERIENCE_DATA: Experience[] = [
   //2023
   {
     id: 'upc-degree',
-    role: 'Ingeniería de Software — 7° Semestre',
+    role: 'Ingeniería de Software — 8° Semestre',
     company: 'Universidad Peruana de Ciencias Aplicadas (UPC)',
     period: '2023 — Actualidad',
     current: true,
     type: 'academic',
     sortYear: 2023, sortMonth: 3,
     description:
-        'Formación en ingeniería de software con proyectos fullstack reales en equipo. Arquitecturas DDD, APIs RESTful, frontends modernos y metodologías ágiles. Actualmente en 7° semestre.',
+        'Formación en ingeniería de software con proyectos fullstack reales en equipo. Arquitecturas DDD, APIs RESTful, frontends modernos y metodologías ágiles. Actualmente en 8° semestre.',
     highlights: [
+      'Décimo Superior — Top 10% de la carrera',
       'SplitEasy: Spring Boot + Angular con DDD completo y JWT',
       'WorkStation: C# .NET + Vue.js con arquitectura limpia y Swagger',
       'Smart Parking Barrier: Arduino + C++ con sensores de gas y ultrasonido',

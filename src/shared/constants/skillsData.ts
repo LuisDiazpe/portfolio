@@ -62,6 +62,19 @@ export const SKILLS_DATA: SkillGroup[] = [
     ],
   },
   {
+    category: 'cloud',
+    label: 'Cloud & Deploy',
+    skills: [
+      { id: 'vercel',      name: 'Vercel',       category: 'cloud', level: 'advanced',     color: '#ffffff', years: 2 },
+      { id: 'cloudflare',  name: 'Cloudflare',   category: 'cloud', level: 'advanced',     color: '#f38020', years: 1 },
+      { id: 'railway',     name: 'Railway',      category: 'cloud', level: 'advanced',     color: '#a78bfa', years: 1 },
+      { id: 'render',      name: 'Render',       category: 'cloud', level: 'advanced',     color: '#46e3b7', years: 1 },
+      { id: 'netlify',     name: 'Netlify',      category: 'cloud', level: 'advanced',     color: '#00c7b7', years: 2 },
+      { id: 'aws',         name: 'AWS',          category: 'cloud', level: 'intermediate', color: '#ff9900', years: 1 },
+      { id: 'azure',       name: 'Azure',        category: 'cloud', level: 'intermediate', color: '#0078d4', years: 1 },
+    ],
+  },
+  {
     category: 'tools',
     label: 'Herramientas & DevOps',
     skills: [

@@ -10,7 +10,7 @@
   "hero": {
     "available": "Available for opportunities",
     "roles": [
-      "Fullstack Developer",
+      "Fullstack & IoT Developer",
       "N8N Automation",
       "UPC · Lima, Peru"
     ],
@@ -41,7 +41,7 @@
       "arkabia_title": "Fullstack Developer at Arkabia",
       "arkabia_desc": "React, Angular, TypeScript, C#, Java. Technical lead for Meproind. Sep 2024 — Present.",
       "upc_title": "Software Engineering — UPC",
-      "upc_desc": "7th semester. DDD, clean architecture and real fullstack team projects.",
+      "upc_desc": "8th semester · Top 10% of the program. DDD, clean architecture and real fullstack team projects.",
       "n8n_title": "Automation with N8N & AI",
       "n8n_desc": "Workflows, bots, scraping, automated calls and multi-platform integrations.",
       "lang_title": "Trilingual",
@@ -67,7 +67,8 @@
       "mobile": "Mobile",
       "database": "Databases",
       "automation": "Automation",
-      "tools": "Tools & DevOps"
+      "tools": "Tools & DevOps",
+      "cloud": "Cloud & Deploy"
     }
   },
   "experience": {
@@ -159,14 +160,14 @@
   },
   "experience_data": {
     "meproind-dev": {
-      "role": "Fullstack Developer & N8N Backend",
-      "description": "Fullstack development for a mining services company, a business idea from the Arkabia ecosystem. React frontend and backend built entirely with N8N. Production mining cost calculation system.",
+      "role": "Tech Lead · Fullstack & IoT",
+      "description": "Technical lead of the platform for a mining services company (a business idea from the Arkabia ecosystem), now in production. Multilingual React frontend (i18n) and a backend built entirely with N8N, with an IoT/industrial layer for monitoring and operational cost calculation.",
       "highlights": [
-        "Technical project lead — architecture and system decisions",
-        "React frontend with design from Figma",
-        "100% N8N backend: gravitational table cost calculation",
-        "Estimates for electricity, water and mineral pricing",
-        "Relational database design and modeling"
+        "Technical lead: architecture, business flows and system decisions",
+        "Multilingual React frontend (i18n: Spanish, English and Portuguese)",
+        "100% N8N backend: gravimetric table cost calculation",
+        "IoT/industrial layer: electricity, water usage and pricing per mineral",
+        "Database modeling and cloud deployment — in production"
       ]
     },
     "arkabia-dev": {
@@ -244,9 +245,10 @@
       ]
     },
     "upc-degree": {
-      "role": "Software Engineering — 7th Semester",
-      "description": "Software engineering education with real fullstack team projects. DDD architectures, RESTful APIs, modern frontends and agile methodologies. Currently in the 7th semester.",
+      "role": "Software Engineering — 8th Semester",
+      "description": "Software engineering education with real fullstack team projects. DDD architectures, RESTful APIs, modern frontends and agile methodologies. Currently in the 8th semester.",
       "highlights": [
+        "Top 10% of the program — Academic merit distinction",
         "SplitEasy: Spring Boot + Angular with complete DDD and JWT",
         "WorkStation: C# .NET + Vue.js with clean architecture and Swagger",
         "Smart Parking Barrier: Arduino + C++ with gas and ultrasonic sensors",
@@ -295,8 +297,8 @@
       "description": "Fullstack WhatsApp marketing automation platform with AI. Angular frontend + N8N backend. Voice, personalized videos and intelligent flows in production."
     },
     "meproind-fullstack": {
-      "title": "Meproind — Mining Fullstack System",
-      "description": "Fullstack platform for mining company. React frontend + N8N backend. Calculates gravitational table costs, water flow, electricity and mineral pricing."
+      "title": "Meproind — Industrial IoT Platform",
+      "description": "Industrial platform for a mining company: monitoring and cost calculation for gravimetric tables, electricity and water usage. Multilingual React frontend (i18n) + N8N backend. In production."
     },
     "spliteasy-fullstack": {
       "title": "SplitEasy — Shared Expenses",
