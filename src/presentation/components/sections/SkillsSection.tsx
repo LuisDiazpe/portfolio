@@ -15,26 +15,38 @@ const LEVEL_PCT: Record<SkillLevel, string> = {
 function SkillBar({ name, level, color }: { name: string; level: SkillLevel; color: string }) {
     const { t } = useTranslation()
     return (
-        <div className="group flex items-center gap-3 py-1.5">
-            <div className="flex items-center gap-2 w-36 flex-shrink-0">
-                <div className="w-2 h-2 rounded-full flex-shrink-0" style={{ background: color }} />
-                <span className="text-sm text-text-muted group-hover:text-text-primary transition-colors truncate">
-          {name}
-        </span>
+        <div className="group py-2 sm:py-1.5">
+            <div className="flex flex-col gap-1.5 sm:flex-row sm:items-center sm:gap-3">
+                {/* Name + (level on mobile) */}
+                <div className="flex items-center justify-between gap-2 sm:w-36 sm:flex-shrink-0 sm:justify-start">
+                    <div className="flex items-center gap-2 min-w-0">
+                        <div className="w-2 h-2 rounded-full flex-shrink-0" style={{ background: color }} />
+                        <span className="text-sm text-text-muted group-hover:text-text-primary transition-colors truncate">
+                            {name}
+                        </span>
+                    </div>
+                    <span className="text-xs text-text-subtle font-mono flex-shrink-0 sm:hidden">
+                        {t(`skills.levels.${level}`)}
+                    </span>
+                </div>
+
+                {/* Level bar — full width on mobile, flexible on desktop */}
+                <div className="w-full sm:flex-1 h-2 sm:h-[5px] bg-white/10 rounded-full overflow-hidden">
+                    <motion.div
+                        className="h-full rounded-full"
+                        style={{ background: `linear-gradient(90deg, ${color}, ${color}66)` }}
+                        initial={{ width: '0%' }}
+                        whileInView={{ width: LEVEL_PCT[level] }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.9, ease: 'easeOut', delay: 0.05 }}
+                    />
+                </div>
+
+                {/* Level label — desktop only */}
+                <span className="hidden sm:block text-xs text-text-subtle w-20 text-right flex-shrink-0 font-mono">
+                    {t(`skills.levels.${level}`)}
+                </span>
             </div>
-            <div className="flex-1 h-[3px] bg-white/5 rounded-full overflow-hidden">
-                <motion.div
-                    className="h-full rounded-full"
-                    style={{ background: `linear-gradient(90deg, ${color}, ${color}66)` }}
-                    initial={{ width: '0%' }}
-                    whileInView={{ width: LEVEL_PCT[level] }}
-                    viewport={{ once: true }}
-                    transition={{ duration: 0.9, ease: 'easeOut', delay: 0.05 }}
-                />
-            </div>
-            <span className="text-xs text-text-subtle w-20 text-right flex-shrink-0 font-mono">
-        {t(`skills.levels.${level}`)}
-      </span>
         </div>
     )
 }
