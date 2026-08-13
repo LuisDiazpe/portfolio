@@ -10,6 +10,7 @@ const LEVEL_PCT: Record<SkillLevel, string> = {
     advanced:     '80%',
     intermediate: '60%',
     learning:     '40%',
+
 }
 
 function SkillBar({ name, level, color }: { name: string; level: SkillLevel; color: string }) {
