@@ -67,7 +67,7 @@ function ExperienceCard({ exp, index }: { exp: Experience; index: number }) {
               whileInView={{ scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.06 + 0.15, type: 'spring', stiffness: 300 }}
-              className={`absolute -left-[2.35rem] top-4 w-4 h-4 rounded-full border-2 flex items-center justify-center flex-shrink-0 ${DOT_COLOR[exp.type]}`}
+              className={`absolute -left-[1.35rem] md:-left-[2.35rem] top-4 w-4 h-4 rounded-full border-2 flex items-center justify-center flex-shrink-0 ${DOT_COLOR[exp.type]}`}
           >
             {exp.current && (
                 <span className="w-1.5 h-1.5 rounded-full bg-aurora-cyan animate-pulse" />
@@ -76,7 +76,7 @@ function ExperienceCard({ exp, index }: { exp: Experience; index: number }) {
 
           <div className="card-glow rounded-2xl p-5 md:p-6 hover:border-aurora-cyan/20 transition-all duration-300">
             {/* Header */}
-            <div className="flex flex-wrap items-start justify-between gap-3 mb-3">
+            <div className="flex flex-col sm:flex-row sm:flex-wrap items-start sm:justify-between gap-2 sm:gap-3 mb-3">
               <div className="flex-1 min-w-0">
                 <div className="flex flex-wrap items-center gap-2 mb-1.5">
                 <span className={`inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-xs font-semibold border ${TYPE_COLOR[exp.type]}`}>
@@ -107,7 +107,7 @@ function ExperienceCard({ exp, index }: { exp: Experience; index: number }) {
                     <span className="text-text-muted text-sm font-medium">{exp.company}</span>
                 )}
               </div>
-              <span className="font-mono text-xs text-text-subtle bg-bg-tertiary px-3 py-1.5 rounded-lg border border-border whitespace-nowrap flex-shrink-0">
+              <span className="font-mono text-xs text-text-subtle bg-bg-tertiary px-3 py-1.5 rounded-lg border border-border whitespace-nowrap flex-shrink-0 self-start">
               {exp.period}
             </span>
             </div>
@@ -151,13 +151,13 @@ export function ExperienceSection() {
             {/* Full timeline line */}
             <div className="absolute left-5 top-0 bottom-0 w-px bg-gradient-to-b from-aurora-cyan via-aurora-violet to-transparent opacity-25" />
 
-            <div className="flex flex-col gap-0 pl-14">
+            <div className="flex flex-col gap-0 pl-10 md:pl-14">
               {groups.map((group, gi) => (
                   <div key={group.year} className="mb-10">
 
                     {/* Year label */}
                     <FadeIn delay={gi * 0.05}>
-                      <div className="relative flex items-center gap-3 mb-6 -ml-14">
+                      <div className="relative flex items-center gap-3 mb-6 -ml-10 md:-ml-14">
                         {/* Year dot on timeline */}
                         <div className="w-10 h-10 rounded-full bg-bg-tertiary border border-aurora-cyan/30 flex items-center justify-center flex-shrink-0 z-10">
                       <span className="font-mono text-xs font-bold text-aurora-cyan">
