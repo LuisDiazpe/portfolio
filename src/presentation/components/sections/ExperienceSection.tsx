@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
+import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { Briefcase, GraduationCap, User, Cpu, Award, ExternalLink } from 'lucide-react'
+import { Briefcase, GraduationCap, User, Cpu, Award, ExternalLink, ChevronDown } from 'lucide-react'
 import { FadeIn } from '../ui/FadeIn'
 import { SectionHeader } from '../ui/SectionHeader'
 import { EXPERIENCE_DATA } from '@/shared/constants/experienceData'
@@ -58,6 +59,7 @@ function ExperienceCard({ exp, index }: { exp: Experience; index: number }) {
   const tRole = (td && typeof td === 'object' && 'role' in td) ? td.role as string : exp.role
   const tDesc = (td && typeof td === 'object' && 'description' in td) ? td.description as string : exp.description
   const tHighlights = (td && typeof td === 'object' && 'highlights' in td) ? td.highlights as string[] : exp.highlights
+  const [expanded, setExpanded] = useState(false)
   return (
       <FadeIn delay={index * 0.06}>
         <div className="relative">
@@ -112,9 +114,20 @@ function ExperienceCard({ exp, index }: { exp: Experience; index: number }) {
             </span>
             </div>
 
-            <p className="text-text-muted text-sm leading-relaxed mb-4">{tDesc}</p>
+            <p className={`text-text-muted text-sm leading-relaxed mb-3 sm:mb-4 ${expanded ? '' : 'line-clamp-2'} sm:line-clamp-none`}>{tDesc}</p>
 
-            <ul className="flex flex-col gap-1.5 mb-4">
+            {/* Mobile-only expand toggle */}
+            <button
+                type="button"
+                onClick={() => setExpanded(v => !v)}
+                aria-expanded={expanded}
+                className="sm:hidden inline-flex items-center gap-1 text-xs font-semibold text-aurora-cyan mb-4 hover:opacity-80 transition-opacity"
+            >
+              {expanded ? t('experience.show_less') : t('experience.show_more')}
+              <ChevronDown size={13} className={`transition-transform duration-300 ${expanded ? 'rotate-180' : ''}`} />
+            </button>
+
+            <ul className={`${expanded ? 'flex' : 'hidden'} sm:flex flex-col gap-1.5 mb-4`}>
               {tHighlights.map(h => (
                   <li key={h} className="flex items-start gap-2 text-sm text-text-muted">
                     <span className="mt-2 w-1 h-1 rounded-full bg-aurora-cyan flex-shrink-0" />

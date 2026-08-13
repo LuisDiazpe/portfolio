@@ -87,7 +87,9 @@
     "sections": {
       "current": "Posições atuais",
       "past": "Experiência anterior"
-    }
+    },
+    "show_more": "Ver mais",
+    "show_less": "Ver menos"
   },
   "projects": {
     "tag": "// projetos",

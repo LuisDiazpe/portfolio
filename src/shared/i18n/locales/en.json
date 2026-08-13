@@ -87,7 +87,9 @@
     "sections": {
       "current": "Current positions",
       "past": "Previous experience"
-    }
+    },
+    "show_more": "Show more",
+    "show_less": "Show less"
   },
   "projects": {
     "tag": "// projects",
