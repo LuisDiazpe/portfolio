@@ -48,7 +48,9 @@
       "lang_desc": "Native Spanish · English B2 (Cambridge) · Intermediate Portuguese",
       "loc_title": "Cajamarca, Peru 🏔️",
       "loc_desc": "20 years old. Aspiring Software Engineer at Microsoft."
-    }
+    },
+    "cv_available": "Available in",
+    "cv_hint": "Downloads in the language you're viewing"
   },
   "skills": {
     "tag": "// tech stack",

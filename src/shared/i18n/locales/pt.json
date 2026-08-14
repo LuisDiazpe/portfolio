@@ -48,7 +48,9 @@
       "lang_desc": "Espanhol nativo · Inglês B2 (Cambridge) · Português intermediário",
       "loc_title": "Cajamarca, Peru 🏔️",
       "loc_desc": "20 anos. Aspirante a Engenheiro de Software na Microsoft."
-    }
+    },
+    "cv_available": "Disponível em",
+    "cv_hint": "Baixa no idioma que você está vendo"
   },
   "skills": {
     "tag": "// stack técnico",

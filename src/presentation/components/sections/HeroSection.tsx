@@ -16,7 +16,9 @@ const stagger = {
 }
 
 export function HeroSection() {
-  const { t } = useTranslation()
+  const { t, i18n } = useTranslation()
+  const cvLang = i18n.language === 'en' ? 'en' : i18n.language === 'pt' ? 'pt' : 'es'
+  const cvHref = `/cv-jorge-luis-diaz-${cvLang}.pdf`
   const scrollTo = (id: string) =>
       document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
 
@@ -86,14 +88,16 @@ export function HeroSection() {
               </button>
               {/* CV Download in hero */}
               <a
-                  href="/cv-jorge-luis-diaz.pdf"
-                  download
+                  href={cvHref}
+                  download={`CV-Jorge-Luis-Diaz-${cvLang.toUpperCase()}.pdf`}
+                  title={t('about.cv_hint')}
                   className="flex items-center gap-2 px-4 py-3 rounded-xl text-sm font-semibold
                 text-text-muted border border-border hover:border-aurora-cyan/30 hover:text-aurora-cyan
                 transition-all focus-aurora"
               >
                 <Download size={15} />
                 CV
+                <span className="text-[10px] font-mono opacity-70">{cvLang.toUpperCase()}</span>
               </a>
               <a href="https://github.com/LuisDiazpe" target="_blank" rel="noreferrer" aria-label="GitHub"
                  className="flex items-center px-4 py-3 rounded-xl text-sm text-text-muted
