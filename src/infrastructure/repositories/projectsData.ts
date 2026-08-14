@@ -157,6 +157,7 @@ export const PROJECTS_DATA: Project[] = [
     ],
     imagePlaceholder: 'IV',
     imageUrl: '/projects/InmoVista.png',
+    githubUrl: 'https://github.com/LuisDiazpe/inmovista-microservicios',
     featured: false,
     year: 2026,
     highlights: [
