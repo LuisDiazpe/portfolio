@@ -314,6 +314,10 @@
       "title": "SkillShare — Grupos de Estudo",
       "description": "App móvel Flutter para criar grupos de estudo: ideias, debates e materiais compartilhados, com notificações. Backend monolítico em C# .NET com APIs RESTful."
     },
+    "inmovista-microservices": {
+      "title": "InmoVista — Microsserviços (Exame)",
+      "description": "Exame de Arquitetura de Software: microsserviços imobiliários com o padrão CQRS. Escrita em Java/WildFly, serviços de leitura e streaming 360° em Python, Redis em memória, orquestrado com Docker Compose e NGINX. O frontend é um HTML mínimo (com apoio de IA); o foco foi o backend."
+    },
     "spliteasy-fullstack": {
       "title": "SplitEasy — Despesas Compartilhadas",
       "description": "App para gestão de despesas em grupo. Backend principal em Java Spring Boot com arquitetura DDD. Frontend Angular de integração."

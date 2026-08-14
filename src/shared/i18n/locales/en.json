@@ -314,6 +314,10 @@
       "title": "SkillShare — Study Groups",
       "description": "Flutter mobile app to create study groups: shared ideas, debates and materials, with notifications. Monolithic C# .NET backend with RESTful APIs."
     },
+    "inmovista-microservices": {
+      "title": "InmoVista — Microservices (Exam)",
+      "description": "Software Architecture exam: real-estate microservices with the CQRS pattern. Write side in Java/WildFly, read and 360° streaming services in Python, in-memory Redis, orchestrated with Docker Compose and NGINX. The frontend is a minimal HTML (AI-assisted); the focus was the backend."
+    },
     "spliteasy-fullstack": {
       "title": "SplitEasy — Shared Expenses",
       "description": "App for group expense management. Main backend in Java Spring Boot with DDD architecture. Angular integration frontend."
