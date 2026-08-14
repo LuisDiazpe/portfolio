@@ -33,7 +33,7 @@ export class InMemoryProjectRepository implements ProjectRepository {
   }
 
   async getByCategory(category: ProjectCategory): Promise<Project[]> {
-    return sortProjects(this.projects.filter(p => p.category === category));
+    return sortProjects(this.projects.filter(p => p.category === category || (p.secondaryCategories?.includes(category) ?? false)));
   }
 
   async getById(id: string): Promise<Project | null> {

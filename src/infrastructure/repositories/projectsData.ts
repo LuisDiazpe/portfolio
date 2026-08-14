@@ -31,9 +31,10 @@ export const PROJECTS_DATA: Project[] = [
   {
     id: 'darkfunnels-fullstack',
     title: 'DarkFunnels.ai — Plataforma Fullstack IA',
-    description: 'Plataforma fullstack de automatización de marketing en WhatsApp con IA. Frontend Angular + backend N8N. Voz, videos personalizados y flujos inteligentes en producción.',
-    longDescription: 'DarkFunnels.ai es una plataforma en producción desarrollada como idea de negocio en el ecosistema de Arkabia. Frontend Angular completo y backend construido con N8N. Incluye integración de voz IA, videos personalizados por cliente y flujos complejos de conversación.',
+    description: 'Plataforma fullstack de automatización de marketing en WhatsApp con IA. Frontend Angular + backend N8N (JavaScript y TypeScript). Voz, videos personalizados y flujos inteligentes en producción.',
+    longDescription: 'DarkFunnels.ai es una plataforma en producción desarrollada como idea de negocio en el ecosistema de Arkabia. Frontend Angular completo y backend construido con N8N (JavaScript y TypeScript). Incluye integración de voz IA, videos personalizados por cliente y flujos complejos de conversación.',
     category: 'fullstack',
+    secondaryCategories: ['backend'],
     status: 'production',
     techs: [
       { name: 'Angular', color: 'orange' },

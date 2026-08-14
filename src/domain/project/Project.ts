@@ -1,12 +1,12 @@
 // Domain Entity
 export type ProjectCategory =
-  | 'fullstack'
-  | 'frontend'
-  | 'backend'
-  | 'mobile'
-  | 'automation'
-  | 'iot'
-  | 'ai';
+    | 'fullstack'
+    | 'frontend'
+    | 'backend'
+    | 'mobile'
+    | 'automation'
+    | 'iot'
+    | 'ai';
 
 export type ProjectStatus = 'production' | 'academic' | 'personal' | 'open-source';
 
@@ -21,6 +21,7 @@ export interface Project {
   readonly description: string;
   readonly longDescription: string;
   readonly category: ProjectCategory;
+  readonly secondaryCategories?: readonly ProjectCategory[];
   readonly status: ProjectStatus;
   readonly techs: ProjectTech[];
   readonly imageUrl?: string;
