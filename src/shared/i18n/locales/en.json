@@ -70,7 +70,8 @@
       "database": "Databases",
       "automation": "Automation",
       "tools": "Tools & DevOps",
-      "cloud": "Cloud & Deploy"
+      "cloud": "Cloud & Deploy",
+      "iot": "IoT & Embedded"
     }
   },
   "experience": {

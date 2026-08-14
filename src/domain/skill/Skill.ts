@@ -1,12 +1,13 @@
 export type SkillCategory =
-  | 'frontend'
-  | 'backend'
-  | 'mobile'
-  | 'database'
-  | 'automation'
-  | 'cloud'
-  | 'tools'
-  | 'languages';
+    | 'frontend'
+    | 'backend'
+    | 'mobile'
+    | 'database'
+    | 'automation'
+    | 'iot'
+    | 'cloud'
+    | 'tools'
+    | 'languages';
 
 export type SkillLevel = 'expert' | 'advanced' | 'intermediate' | 'learning';
 

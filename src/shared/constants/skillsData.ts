@@ -25,7 +25,6 @@ export const SKILLS_DATA: SkillGroup[] = [
       { id: 'dotnet',      name: '.NET',         category: 'backend', level: 'advanced',     color: '#512bd4', years: 2 },
       { id: 'nodejs',      name: 'Node.js',      category: 'backend', level: 'advanced',     color: '#339933', years: 2 },
       { id: 'python',      name: 'Python',       category: 'backend', level: 'advanced',     color: '#3776ab', years: 2 },
-      { id: 'cplusplus',   name: 'C++',          category: 'backend', level: 'intermediate', color: '#00599c', years: 2 },
       { id: 'rest-api',    name: 'REST APIs',    category: 'backend', level: 'expert',       color: '#00b4ff', years: 2 },
       { id: 'jwt',         name: 'JWT / Auth',   category: 'backend', level: 'advanced',     color: '#d63aff', years: 2 },
       { id: 'ddd',         name: 'DDD',          category: 'backend', level: 'advanced',     color: '#7c3aed', years: 2 },
@@ -58,7 +57,14 @@ export const SKILLS_DATA: SkillGroup[] = [
     skills: [
       { id: 'n8n',         name: 'N8N',          category: 'automation', level: 'advanced',     color: '#ea4b71', years: 1 },
       { id: 'webhooks',    name: 'Webhooks',     category: 'automation', level: 'advanced',     color: '#00ffcc', years: 1 },
-      { id: 'arduino',     name: 'Arduino',      category: 'automation', level: 'advanced',     color: '#00979d', years: 3 },
+    ],
+  },
+  {
+    category: 'iot',
+    label: 'IoT & Embebidos',
+    skills: [
+      { id: 'arduino',     name: 'Arduino',      category: 'iot', level: 'advanced',     color: '#00979d', years: 3 },
+      { id: 'cplusplus',   name: 'C++',          category: 'iot', level: 'intermediate', color: '#00599c', years: 2 },
     ],
   },
   {
