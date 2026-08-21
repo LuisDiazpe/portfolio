@@ -7,6 +7,7 @@ export type SkillCategory =
     | 'iot'
     | 'cloud'
     | 'tools'
+    | 'testing'
     | 'languages';
 
 export type SkillLevel = 'expert' | 'advanced' | 'intermediate' | 'learning';

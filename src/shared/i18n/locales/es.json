@@ -71,7 +71,8 @@
       "automation": "Automatización",
       "tools": "Herramientas & DevOps",
       "cloud": "Cloud & Deploy",
-      "iot": "IoT & Embebidos"
+      "iot": "IoT & Embebidos",
+      "testing": "Testing & QA"
     }
   },
   "experience": {

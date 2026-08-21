@@ -97,4 +97,15 @@ export const SKILLS_DATA: SkillGroup[] = [
       { id: 'scrum',       name: 'Scrum',        category: 'tools', level: 'advanced',     color: '#7c3aed', years: 3 },
     ],
   },
+  {
+    category: 'testing',
+    label: 'Testing & QA',
+    skills: [
+      { id: 'junit',       name: 'JUnit',        category: 'testing', level: 'intermediate', color: '#25a162', years: 2 },
+      { id: 'nunit',       name: 'NUnit',        category: 'testing', level: 'intermediate', color: '#17a0d6', years: 1 },
+      { id: 'xunit',       name: 'xUnit',        category: 'testing', level: 'intermediate', color: '#9b59b6', years: 1 },
+      { id: 'jest',        name: 'Jest',         category: 'testing', level: 'intermediate', color: '#c63d14', years: 2 },
+      { id: 'tsjest',      name: 'ts-jest',      category: 'testing', level: 'intermediate', color: '#3178c6', years: 1 },
+    ],
+  },
 ];
